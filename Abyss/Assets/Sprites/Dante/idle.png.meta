@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: dante_idle_forward_0
       rect:
         serializedVersion: 2
         x: 5
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: dante_idle_forward_1
       rect:
         serializedVersion: 2
         x: 45
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: dante_idle_forward_2
       rect:
         serializedVersion: 2
         x: 85
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_3
+      name: dante_idle_forward_3
       rect:
         serializedVersion: 2
         x: 125
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_4
+      name: dante_idle_forward_4
       rect:
         serializedVersion: 2
         x: 165
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_5
+      name: dante_idle_forward_5
       rect:
         serializedVersion: 2
         x: 205
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle_0: 1209157050
-      idle_1: -1487651298
-      idle_2: -1772182666
-      idle_3: 551296196
-      idle_4: 652972986
-      idle_5: -879971230
+      dante_idle_forward_0: 1209157050
+      dante_idle_forward_1: -1487651298
+      dante_idle_forward_2: -1772182666
+      dante_idle_forward_3: 551296196
+      dante_idle_forward_4: 652972986
+      dante_idle_forward_5: -879971230
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

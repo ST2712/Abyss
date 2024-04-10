@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: maedve_idle_forward_0
       rect:
         serializedVersion: 2
         x: 7
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: maedve_idle_forward_1
       rect:
         serializedVersion: 2
         x: 49
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: maedve_idle_forward_2
       rect:
         serializedVersion: 2
         x: 91
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_3
+      name: maedve_idle_forward_3
       rect:
         serializedVersion: 2
         x: 133
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_4
+      name: maedve_idle_forward_4
       rect:
         serializedVersion: 2
         x: 175
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_5
+      name: maedve_idle_forward_5
       rect:
         serializedVersion: 2
         x: 217
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle_0: 1536672008
-      idle_1: -2107210375
-      idle_2: 1499447475
-      idle_3: 1578485739
-      idle_4: 1481197607
-      idle_5: 879359741
+      maedve_idle_forward_0: 1536672008
+      maedve_idle_forward_1: -2107210375
+      maedve_idle_forward_2: 1499447475
+      maedve_idle_forward_3: 1578485739
+      maedve_idle_forward_4: 1481197607
+      maedve_idle_forward_5: 879359741
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

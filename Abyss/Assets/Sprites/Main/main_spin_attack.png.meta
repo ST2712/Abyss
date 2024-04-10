@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main_attack_multidirectional_0
+      name: main_spin_attack_0
       rect:
         serializedVersion: 2
         x: 1
@@ -118,7 +118,7 @@ TextureImporter:
         width: 31
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_attack_multidirectional_1
+      name: main_spin_attack_1
       rect:
         serializedVersion: 2
         x: 37
@@ -139,7 +139,7 @@ TextureImporter:
         width: 23
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_attack_multidirectional_2
+      name: main_spin_attack_2
       rect:
         serializedVersion: 2
         x: 65
@@ -160,7 +160,7 @@ TextureImporter:
         width: 31
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_attack_multidirectional_3
+      name: main_spin_attack_3
       rect:
         serializedVersion: 2
         x: 98
@@ -181,7 +181,7 @@ TextureImporter:
         width: 28
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      main_attack_multidirectional_0: -751046631
-      main_attack_multidirectional_1: 1598258187
-      main_attack_multidirectional_2: 2032124782
-      main_attack_multidirectional_3: 971158043
+      main_spin_attack_0: -751046631
+      main_spin_attack_1: 1598258187
+      main_spin_attack_2: 2032124782
+      main_spin_attack_3: 971158043
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

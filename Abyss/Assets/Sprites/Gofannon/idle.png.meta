@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: gofannon_idle_forward_0
       rect:
         serializedVersion: 2
         x: 5
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: gofannon_idle_forward_1
       rect:
         serializedVersion: 2
         x: 51
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: gofannon_idle_forward_2
       rect:
         serializedVersion: 2
         x: 97
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_3
+      name: gofannon_idle_forward_3
       rect:
         serializedVersion: 2
         x: 143
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_4
+      name: gofannon_idle_forward_4
       rect:
         serializedVersion: 2
         x: 189
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_5
+      name: gofannon_idle_forward_5
       rect:
         serializedVersion: 2
         x: 235
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle_0: 2135027264
-      idle_1: 835999680
-      idle_2: -1388722305
-      idle_3: 1897252103
-      idle_4: -1768554830
-      idle_5: 510178350
+      gofannon_idle_forward_0: 2135027264
+      gofannon_idle_forward_1: 835999680
+      gofannon_idle_forward_2: -1388722305
+      gofannon_idle_forward_3: 1897252103
+      gofannon_idle_forward_4: -1768554830
+      gofannon_idle_forward_5: 510178350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

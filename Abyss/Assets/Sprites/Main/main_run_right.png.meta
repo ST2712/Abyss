@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 133ca32d6b944734baf845fcd7dbb2e4
+guid: c0698fe0c2e953b49bdf4603ae6bb0c3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -110,127 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fionn_idle_forward_0
+      name: main_run_right_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 2
         y: 0
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 29
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 376eb5e214ddaee4cb94c3a5a0e0b2dc
-      internalID: -1339569360
+      spriteID: 0968942ca6654b04db5cdc3125ad3abb
+      internalID: -1288672815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fionn_idle_forward_1
+      name: main_run_right_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 0
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 28
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be7fbcecea81af4cbd049c5f31e1bf4
-      internalID: 193271215
+      spriteID: 1e295b7d80d10d7418b3b7f0e79eb1f6
+      internalID: 897102942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fionn_idle_forward_2
+      name: main_run_right_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 66
         y: 0
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 26
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a70b07f110fb440a387b7f0599b840
-      internalID: 866630543
+      spriteID: 1a8a0436232bcff4dbbf18a30d53b873
+      internalID: 2049634438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fionn_idle_forward_3
+      name: main_run_right_3
       rect:
         serializedVersion: 2
-        x: 101
+        x: 97
         y: 0
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 26
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a01bdc784871f6949ba5c196a908486f
-      internalID: 1108576657
+      spriteID: 61a469c29a67409418e88bf8ad0ba231
+      internalID: -2075250408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fionn_idle_forward_4
+      name: main_run_right_4
       rect:
         serializedVersion: 2
-        x: 133
+        x: 128
         y: 0
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 26
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60604b1dce1c6d84a8ea58f46e9c7f59
-      internalID: 275288598
+      spriteID: 12b6812420c11554b90143f3c685d431
+      internalID: -735938444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fionn_idle_forward_5
+      name: main_run_right_5
       rect:
         serializedVersion: 2
-        x: 165
+        x: 158
         y: 0
-        width: 22
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 26
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b9be2ca962dfbc4db8100cdce5f21d6
-      internalID: -494536127
+      spriteID: 937bce31020dc98428023aefbd5e7f09
+      internalID: -29810436
       vertices: []
       indices: 
       edges: []
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fionn_idle_forward_0: -1339569360
-      fionn_idle_forward_1: 193271215
-      fionn_idle_forward_2: 866630543
-      fionn_idle_forward_3: 1108576657
-      fionn_idle_forward_4: 275288598
-      fionn_idle_forward_5: -494536127
+      main_run_right_0: -1288672815
+      main_run_right_1: 897102942
+      main_run_right_2: 2049634438
+      main_run_right_3: -2075250408
+      main_run_right_4: -735938444
+      main_run_right_5: -29810436
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

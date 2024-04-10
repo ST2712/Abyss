@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lugh_0
+      name: lught_idle_forward_0
       rect:
         serializedVersion: 2
         x: 5
@@ -118,7 +118,7 @@ TextureImporter:
         width: 32
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lugh_1
+      name: lught_idle_forward_1
       rect:
         serializedVersion: 2
         x: 47
@@ -139,7 +139,7 @@ TextureImporter:
         width: 32
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lugh_2
+      name: lught_idle_forward_2
       rect:
         serializedVersion: 2
         x: 89
@@ -160,7 +160,7 @@ TextureImporter:
         width: 32
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lugh_3
+      name: lught_idle_forward_3
       rect:
         serializedVersion: 2
         x: 131
@@ -181,7 +181,7 @@ TextureImporter:
         width: 32
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lugh_4
+      name: lught_idle_forward_4
       rect:
         serializedVersion: 2
         x: 173
@@ -202,7 +202,7 @@ TextureImporter:
         width: 32
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lugh_5
+      name: lught_idle_forward_5
       rect:
         serializedVersion: 2
         x: 215
@@ -223,7 +223,7 @@ TextureImporter:
         width: 32
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Lugh_0: 1171660505
-      Lugh_1: -1723152470
-      Lugh_2: 1038734411
-      Lugh_3: -417581297
-      Lugh_4: -1191628954
-      Lugh_5: -1985465762
+      lught_idle_forward_0: 1171660505
+      lught_idle_forward_1: -1723152470
+      lught_idle_forward_2: 1038734411
+      lught_idle_forward_3: -417581297
+      lught_idle_forward_4: -1191628954
+      lught_idle_forward_5: -1985465762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

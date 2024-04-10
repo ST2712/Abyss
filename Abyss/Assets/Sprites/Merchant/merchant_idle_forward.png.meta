@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d990ea1b45b62fa4db98df1b998d82ba
+guid: ac4a28820646b68498344d40952ac648
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,127 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main_running_left_0
+      name: merchant_idle_forward_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 5
         y: 0
-        width: 29
-        height: 34
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c23e274e0df79d94e927e1ed2354ebf9
-      internalID: -799319096
+      spriteID: 8363116f86b165f44847c097eebb40be
+      internalID: -258697974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_running_left_1
+      name: merchant_idle_forward_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 45
         y: 0
-        width: 28
-        height: 34
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7c27132413ffde40ab64331b5aa2184
-      internalID: 219854137
+      spriteID: 81dedac215412fd41ba98c30a6bc176f
+      internalID: 1643780734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_running_left_2
+      name: merchant_idle_forward_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 85
         y: 0
-        width: 26
-        height: 34
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c15f830e6d3e5a74ba9e903f7bbc9e77
-      internalID: 1595361586
+      spriteID: d3f76055dfe0f4b46a01f5f60a343446
+      internalID: -500581974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_running_left_3
+      name: merchant_idle_forward_3
       rect:
         serializedVersion: 2
-        x: 97
+        x: 125
         y: 0
-        width: 26
-        height: 34
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5396f97e7f694a14da2f4ac895316813
-      internalID: -1083554402
+      spriteID: f336fa0631e69314285f3c50fc085272
+      internalID: 748655349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_running_left_4
+      name: merchant_idle_forward_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 165
         y: 0
-        width: 26
-        height: 34
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6912121d987df7e49b628b9e0d2298e0
-      internalID: -1302554566
+      spriteID: 73a338a601c2f1c48b37acb2d070c6dc
+      internalID: 506086134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_running_left_5
+      name: merchant_idle_forward_5
       rect:
         serializedVersion: 2
-        x: 158
+        x: 205
         y: 0
-        width: 26
-        height: 34
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 764c53c6df4dc3a4ca3ff73386795d19
-      internalID: 1484361682
+      spriteID: 37b72d8c974521b4ea3b66b9cad49e4c
+      internalID: 1842876980
       vertices: []
       indices: 
       edges: []
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      main_running_left_0: -799319096
-      main_running_left_1: 219854137
-      main_running_left_2: 1595361586
-      main_running_left_3: -1083554402
-      main_running_left_4: -1302554566
-      main_running_left_5: 1484361682
+      merchant_idle_forward_0: -258697974
+      merchant_idle_forward_1: 1643780734
+      merchant_idle_forward_2: -500581974
+      merchant_idle_forward_3: 748655349
+      merchant_idle_forward_4: 506086134
+      merchant_idle_forward_5: 1842876980
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
