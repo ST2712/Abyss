@@ -31561,11 +31561,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.5958943
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.780385
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 9.20428
       objectReference: {fileID: 0}
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31577,7 +31581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.58
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -31607,13 +31611,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_Size.y
-      value: 0.11633204
+      value: 0.05613485
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_Offset.y
-      value: -0.11183397
+      value: -0.14193256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309828108618132206, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918776051355588282, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7180868034878674148, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_Name
@@ -31632,6 +31664,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 113135635}
     m_Modifications:
+    - target: {fileID: 4074815858811720560, guid: 4800845c2c4caa84eb6194552ae9c841, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4581918338887155568, guid: 4800845c2c4caa84eb6194552ae9c841, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -32083,6 +32119,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1177272032}
     m_Modifications:
+    - target: {fileID: 2055102311959635368, guid: 99597c7b4aa47494fb2b6061505735da, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2055102311959635369, guid: 99597c7b4aa47494fb2b6061505735da, type: 3}
       propertyPath: m_Name
       value: PF Props Chest
@@ -33386,6 +33426,10 @@ PrefabInstance:
     - target: {fileID: 8150476868300563372, guid: 2e2ac125e54a1e44780363d638b1df34, type: 3}
       propertyPath: m_Name
       value: PF Props Crate Small
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150476868300563374, guid: 2e2ac125e54a1e44780363d638b1df34, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8150476868300563375, guid: 2e2ac125e54a1e44780363d638b1df34, type: 3}
       propertyPath: m_RootOrder

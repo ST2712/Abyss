@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: main_attack_multiderectional
+  m_Name: main_spin_attack
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
