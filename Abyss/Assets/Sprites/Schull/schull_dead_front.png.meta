@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fb392247111573a498e8a3736920de43
+guid: 134695a74007d2d40a24f0accd6b071f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,127 +110,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dante_idle_front_0
+      name: schull_dead_front_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 30
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 32
+        height: 23
+      alignment: 9
+      pivot: {x: 0.3741966, y: -0.000000061510214}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d709b0b31d110d4c8912969db01dc94
-      internalID: 1209157050
+      spriteID: 23c59c91e01e84143a35f8a967f0f22b
+      internalID: 1238761949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dante_idle_front_1
+      name: schull_dead_front_1
       rect:
         serializedVersion: 2
-        x: 45
+        x: 32
         y: 0
-        width: 30
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 32
+        height: 22
+      alignment: 9
+      pivot: {x: 0.33721197, y: 0.00000006309892}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07b8345466a609344bc8502cc7b32eb1
-      internalID: -1487651298
+      spriteID: 9897a75f07f64d24b9910e5173dc5b20
+      internalID: 1668569765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dante_idle_front_2
+      name: schull_dead_front_2
       rect:
         serializedVersion: 2
-        x: 85
+        x: 64
         y: 0
-        width: 30
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 32
+        height: 21
+      alignment: 9
+      pivot: {x: 0.34912324, y: 0.006050264}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1af19649fe89db0489dab8efca4ecc56
-      internalID: -1772182666
+      spriteID: 4704dd7dc45d8844abc29e60652603f4
+      internalID: 2022109660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dante_idle_front_3
+      name: schull_dead_front_3
       rect:
         serializedVersion: 2
-        x: 125
+        x: 96
         y: 0
-        width: 30
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 32
+        height: 18
+      alignment: 9
+      pivot: {x: 0.3808868, y: 0.00000007712091}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 654fbe1f1d5b85e48b3a99ceb7cfe869
-      internalID: 551296196
+      spriteID: a3061e89b15e13f4ebbb7eaee471c2d2
+      internalID: 1155978529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dante_idle_front_4
+      name: schull_dead_front_4
       rect:
         serializedVersion: 2
-        x: 165
+        x: 128
         y: 0
-        width: 30
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 32
+        height: 15
+      alignment: 9
+      pivot: {x: 0.38088703, y: 0.000000092545086}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ea22a0e65d160d4d912e96784314994
-      internalID: 652972986
+      spriteID: 49d78e5502ccdb649a6d70851d09391c
+      internalID: -1795383672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dante_idle_front_5
+      name: schull_dead_front_5
       rect:
         serializedVersion: 2
-        x: 205
+        x: 160
         y: 0
-        width: 30
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 32
+        height: 12
+      alignment: 9
+      pivot: {x: 0.3888278, y: 0.02117581}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 609eab23182df834cbad5ddc1573d22c
-      internalID: -879971230
+      spriteID: 8ead609d93968154393aa11ffdd708e2
+      internalID: 1862633609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schull_dead_front_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 12
+      alignment: 9
+      pivot: {x: 0.40867996, y: -0.010587818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7259a8867f11a724a8c403d3f0f701f4
+      internalID: 728162961
       vertices: []
       indices: 
       edges: []
@@ -246,12 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dante_idle_front_0: 1209157050
-      dante_idle_front_1: -1487651298
-      dante_idle_front_2: -1772182666
-      dante_idle_front_3: 551296196
-      dante_idle_front_4: 652972986
-      dante_idle_front_5: -879971230
+      schull_dead_front_0: 1238761949
+      schull_dead_front_1: 1668569765
+      schull_dead_front_2: 2022109660
+      schull_dead_front_3: 1155978529
+      schull_dead_front_4: -1795383672
+      schull_dead_front_5: 1862633609
+      schull_dead_front_6: 728162961
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -110,15 +110,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: maedve_idle_forward_0
+      name: maedve_idle_front_0
       rect:
         serializedVersion: 2
         x: 7
         y: 0
         width: 28
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,15 +131,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: maedve_idle_forward_1
+      name: maedve_idle_front_1
       rect:
         serializedVersion: 2
         x: 49
         y: 0
         width: 28
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,15 +152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: maedve_idle_forward_2
+      name: maedve_idle_front_2
       rect:
         serializedVersion: 2
         x: 91
         y: 0
         width: 28
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,15 +173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: maedve_idle_forward_3
+      name: maedve_idle_front_3
       rect:
         serializedVersion: 2
         x: 133
         y: 0
         width: 28
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,15 +194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: maedve_idle_forward_4
+      name: maedve_idle_front_4
       rect:
         serializedVersion: 2
         x: 175
         y: 0
         width: 28
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,15 +215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: maedve_idle_forward_5
+      name: maedve_idle_front_5
       rect:
         serializedVersion: 2
         x: 217
         y: 0
         width: 28
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      maedve_idle_forward_0: 1536672008
-      maedve_idle_forward_1: -2107210375
-      maedve_idle_forward_2: 1499447475
-      maedve_idle_forward_3: 1578485739
-      maedve_idle_forward_4: 1481197607
-      maedve_idle_forward_5: 879359741
+      maedve_idle_front_0: 1536672008
+      maedve_idle_front_1: -2107210375
+      maedve_idle_front_2: 1499447475
+      maedve_idle_front_3: 1578485739
+      maedve_idle_front_4: 1481197607
+      maedve_idle_front_5: 879359741
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

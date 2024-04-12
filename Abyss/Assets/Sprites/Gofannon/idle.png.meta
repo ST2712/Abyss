@@ -110,15 +110,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gofannon_idle_forward_0
+      name: gofannon_idle_front_0
       rect:
         serializedVersion: 2
         x: 5
         y: 0
         width: 36
         height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,15 +131,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gofannon_idle_forward_1
+      name: gofannon_idle_front_1
       rect:
         serializedVersion: 2
         x: 51
         y: 0
         width: 36
         height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,15 +152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gofannon_idle_forward_2
+      name: gofannon_idle_front_2
       rect:
         serializedVersion: 2
         x: 97
         y: 0
         width: 36
         height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,15 +173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gofannon_idle_forward_3
+      name: gofannon_idle_front_3
       rect:
         serializedVersion: 2
         x: 143
         y: 0
         width: 36
         height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,15 +194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gofannon_idle_forward_4
+      name: gofannon_idle_front_4
       rect:
         serializedVersion: 2
         x: 189
         y: 0
         width: 36
         height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,15 +215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gofannon_idle_forward_5
+      name: gofannon_idle_front_5
       rect:
         serializedVersion: 2
         x: 235
         y: 0
         width: 36
         height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gofannon_idle_forward_0: 2135027264
-      gofannon_idle_forward_1: 835999680
-      gofannon_idle_forward_2: -1388722305
-      gofannon_idle_forward_3: 1897252103
-      gofannon_idle_forward_4: -1768554830
-      gofannon_idle_forward_5: 510178350
+      gofannon_idle_front_0: 2135027264
+      gofannon_idle_front_1: 835999680
+      gofannon_idle_front_2: -1388722305
+      gofannon_idle_front_3: 1897252103
+      gofannon_idle_front_4: -1768554830
+      gofannon_idle_front_5: 510178350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

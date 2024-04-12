@@ -110,15 +110,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ailin_idle_forward_0
+      name: ailin_idle_front_0
       rect:
         serializedVersion: 2
         x: 5
         y: 0
         width: 31
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,15 +131,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ailin_idle_forward_1
+      name: ailin_idle_front_1
       rect:
         serializedVersion: 2
         x: 46
         y: 0
         width: 31
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,15 +152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ailin_idle_forward_2
+      name: ailin_idle_front_2
       rect:
         serializedVersion: 2
         x: 87
         y: 0
         width: 31
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,15 +173,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ailin_idle_forward_3
+      name: ailin_idle_front_3
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 31
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,15 +194,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ailin_idle_forward_4
+      name: ailin_idle_front_4
       rect:
         serializedVersion: 2
         x: 169
         y: 0
         width: 31
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,15 +215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ailin_idle_forward_5
+      name: ailin_idle_front_5
       rect:
         serializedVersion: 2
         x: 210
         y: 0
         width: 31
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ailin_idle_forward_0: 184508137
-      ailin_idle_forward_1: -1286438402
-      ailin_idle_forward_2: -1854924977
-      ailin_idle_forward_3: -1583227881
-      ailin_idle_forward_4: -1097666764
-      ailin_idle_forward_5: -1654142462
+      ailin_idle_front_0: 184508137
+      ailin_idle_front_1: -1286438402
+      ailin_idle_front_2: -1854924977
+      ailin_idle_front_3: -1583227881
+      ailin_idle_front_4: -1097666764
+      ailin_idle_front_5: -1654142462
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

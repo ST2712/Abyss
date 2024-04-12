@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main_run_forward_0
+      name: main_run_front_0
       rect:
         serializedVersion: 2
         x: 5
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_run_forward_1
+      name: main_run_front_1
       rect:
         serializedVersion: 2
         x: 37
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_run_forward_2
+      name: main_run_front_2
       rect:
         serializedVersion: 2
         x: 68
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_run_forward_3
+      name: main_run_front_3
       rect:
         serializedVersion: 2
         x: 99
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_run_forward_4
+      name: main_run_front_4
       rect:
         serializedVersion: 2
         x: 126
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_run_forward_5
+      name: main_run_front_5
       rect:
         serializedVersion: 2
         x: 155
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      main_run_forward_0: -1609339608
-      main_run_forward_1: 231579066
-      main_run_forward_2: -380772060
-      main_run_forward_3: -212441718
-      main_run_forward_4: -129413967
-      main_run_forward_5: 488407052
+      main_run_front_0: -1609339608
+      main_run_front_1: 231579066
+      main_run_front_2: -380772060
+      main_run_front_3: -212441718
+      main_run_front_4: -129413967
+      main_run_front_5: 488407052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

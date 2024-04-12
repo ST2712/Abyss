@@ -1,0 +1,14 @@
+
+on: [push]
+
+jobs:
+  Notion_Hook_job:
+    runs-on: ubuntu-latest
+    name: A job to connect to Notion
+    steps:
+      - name: NotionHook
+        id: notion
+        uses: JackBlaze132/NotionHook@1.0
+        with:
+          notion_secret: ${{ secrets.NOTION_SECRET }}
+          notion_database: ${{ secrets.NOTION_DATABASE }}
