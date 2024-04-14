@@ -38,17 +38,17 @@ public class CombatScript : MonoBehaviour
         }
     }
 
-    private void directionalPunch(Vector2 direction)
+    private void directionalPunch()
     {
         animator.SetTrigger("NormalPunch");
 
-        RaycastHit2D[] hits = Physics2D.RaycastAll(punchController.position, direction, ratioPunch);
+        Collider2D[] objects = Physics2D.OverlapCircleAll(punchController.position, normalRatioPunch);
 
-        foreach (RaycastHit2D hit in hits)
+        foreach (Collider2D obj in objects)
         {
-            if (hit.collider.CompareTag("Enemy"))
+            if (obj.CompareTag("Enemy"))
             {
-                hit.transform.GetComponent<Enemy>().takeDamage(punchDamage);
+                obj.transform.GetComponent<Enemy>().takeDamage(punchDamage);
             }
         }
     }
@@ -95,18 +95,10 @@ public class CombatScript : MonoBehaviour
             timeNextPunch = timeBetweenPunches;
         }
 
-        Vector2 playerDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
-
-        // Verificar si el jugador está pulsando el botón de golpear y si ha pasado el tiempo entre golpes
         if ((Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.P).ToString().ToLower() == "p") && timeNextPunch <= 0)
         {
-            directionalPunch(playerDirection);
+            directionalPunch();
             timeNextPunch = timeBetweenPunches;
         }
-    }
-
-        private void FixedUpdate()
-    {
-        rb2D.MovePosition(rb2D.position + direction * movementSpeed * Time.fixedDeltaTime);
     }
 }

@@ -32053,7 +32053,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4283501944464646847, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: ratioPunch
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4283501944464646847, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: punchDamage
@@ -32065,7 +32065,7 @@ PrefabInstance:
       objectReference: {fileID: 1501494164}
     - target: {fileID: -4283501944464646847, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: normalRatioPunch
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: -4283501944464646847, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: timeBetweenPunches
