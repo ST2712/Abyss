@@ -8,6 +8,7 @@ public class CombatScript : MonoBehaviour
 
     [SerializeField] private Transform punchController;
     [SerializeField] private float ratioPunch;
+    [SerializeField] private float normalRatioPunch;
     [SerializeField] private float punchDamage;
     [SerializeField] private float timeBetweenPunches;
     [SerializeField] private float timeNextPunch;
@@ -24,7 +25,7 @@ public class CombatScript : MonoBehaviour
     private void circlePunch()
     {
 
-        animator.SetTrigger("CirclePunch");
+        animator.SetTrigger("SpinPunch");
 
         Collider2D[] objects = Physics2D.OverlapCircleAll(punchController.position, ratioPunch);
 
@@ -57,6 +58,9 @@ public class CombatScript : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(punchController.position, ratioPunch);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(punchController.position, normalRatioPunch);
     }
     // Start is called before the first frame update
     void Start()
