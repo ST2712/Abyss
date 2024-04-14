@@ -7,15 +7,17 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private float health;
     private Animator animator;
-    // Start is called before the first frame update
+    private AudioSource audioSource;
     void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void takeDamage(float damage){
         health -= damage;
         if(health <= 0){
+            audioSource.Play();
             die();
             this.enabled = false;
             GetComponent<Collider2D>().enabled = false;
