@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,7 +116,7 @@ TextureImporter:
         x: 0
         y: 0
         width: 32
-        height: 23
+        height: 28
       alignment: 9
       pivot: {x: 0.3741966, y: -0.000000061510214}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,7 +137,7 @@ TextureImporter:
         x: 32
         y: 0
         width: 32
-        height: 22
+        height: 28
       alignment: 9
       pivot: {x: 0.33721197, y: 0.00000006309892}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,7 +158,7 @@ TextureImporter:
         x: 64
         y: 0
         width: 32
-        height: 21
+        height: 26
       alignment: 9
       pivot: {x: 0.34912324, y: 0.006050264}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,7 +179,7 @@ TextureImporter:
         x: 96
         y: 0
         width: 32
-        height: 18
+        height: 23
       alignment: 9
       pivot: {x: 0.3808868, y: 0.00000007712091}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,7 +200,7 @@ TextureImporter:
         x: 128
         y: 0
         width: 32
-        height: 15
+        height: 20
       alignment: 9
       pivot: {x: 0.38088703, y: 0.000000092545086}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,7 +221,7 @@ TextureImporter:
         x: 160
         y: 0
         width: 32
-        height: 12
+        height: 17
       alignment: 9
       pivot: {x: 0.3888278, y: 0.02117581}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,7 +242,7 @@ TextureImporter:
         x: 192
         y: 0
         width: 32
-        height: 12
+        height: 17
       alignment: 9
       pivot: {x: 0.40867996, y: -0.010587818}
       border: {x: 0, y: 0, z: 0, w: 0}
