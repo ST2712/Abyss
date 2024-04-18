@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     public Sprite emptyHeart;
     public Sprite extraHeart;
 
-    private AudioSource heartBite;
+    private AudioSource heartBeat;
 
     void Start()
     {
@@ -52,9 +52,11 @@ public class Health : MonoBehaviour
         {
             if (!heartBite.isPlaying)
             {
-                heartBite.Play();
+                heartBeat.Play();
                 StartCoroutine(PauseSoundAndResume());
             }
+        }else{
+            heartBite.Stop();
         }
     }
 
@@ -62,10 +64,10 @@ public class Health : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
 
-        if(heartBite.isPlaying)
+        if(heartBeat.isPlaying)
         {
-            heartBite.Stop();
-            heartBite.PlayDelayed(1f);
+            heartBeat.Stop();
+            heartBeat.PlayDelayed(1f);
         }
     }
 }

@@ -16440,7 +16440,7 @@ MonoBehaviour:
   fullHeart: {fileID: -558878010, guid: 081050f3c6d30d944947f74063a1b908, type: 3}
   emptyHeart: {fileID: -978033932, guid: 081050f3c6d30d944947f74063a1b908, type: 3}
   extraHeart: {fileID: 2055731783, guid: 081050f3c6d30d944947f74063a1b908, type: 3}
---- !u!82 &974892297
+--- !u!82 &974892303
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16451,10 +16451,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7dc9f96f8c63acf459bb05445d982fcf, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -27858,7 +27858,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.15, y: 0.15}
+    oldSize: {x: 0.46875, y: 0.46875}
     newSize: {x: 0.15, y: 0.15}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -33927,11 +33927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.86
+      value: 3.652
       objectReference: {fileID: 0}
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.28
+      value: 2.377
       objectReference: {fileID: 0}
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33979,11 +33979,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_Size.x
-      value: 0.20995754
+      value: 0.6404742
       objectReference: {fileID: 0}
     - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_Size.y
-      value: 0.05613485
+      value: 0.22773169
       objectReference: {fileID: 0}
     - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_Enabled
@@ -33995,7 +33995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_Offset.y
-      value: 0.020999998
+      value: 0.10679842
       objectReference: {fileID: 0}
     - target: {fileID: 2867025526986661843, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_IsTrigger
@@ -34060,7 +34060,7 @@ PrefabInstance:
       addedObject: {fileID: 974892296}
     - targetCorrespondingSourceObject: {fileID: 7180868034878674148, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 974892297}
+      addedObject: {fileID: 974892303}
   m_SourcePrefab: {fileID: 100100000, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
 --- !u!1001 &342175276249406876
 PrefabInstance:
