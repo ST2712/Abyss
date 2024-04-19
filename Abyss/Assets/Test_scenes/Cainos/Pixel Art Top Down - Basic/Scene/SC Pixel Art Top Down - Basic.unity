@@ -16429,7 +16429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9adc8b7477ff848aef7d325b7c3377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 3
   numberOfHearts: 3
   extraHealth: 1
   hearts:
@@ -16460,7 +16460,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.5371032
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -26949,9 +26949,9 @@ RectTransform:
   - {fileID: 81883044}
   m_Father: {fileID: 208156631}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -220}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1495997158
@@ -27040,7 +27040,7 @@ Transform:
   m_GameObject: {fileID: 1501494163}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.003, y: 0.144, z: 0}
+  m_LocalPosition: {x: -0.016, y: 0.414, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33927,11 +33927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.652
+      value: 5.733
       objectReference: {fileID: 0}
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.377
+      value: 1.51
       objectReference: {fileID: 0}
     - target: {fileID: 1423948036054092081, guid: eb568d37a6b528c43a2295ba2a0bda1b, type: 3}
       propertyPath: m_LocalPosition.z
