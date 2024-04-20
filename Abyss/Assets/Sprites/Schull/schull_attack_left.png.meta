@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 488d3511803bf0a4d98040f984b73d55
+guid: f61de336fe96d0149a9da3d64aabcfab
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: schull_idle_forward_0
+      name: schull_attack_left_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4231073d17f55940ac48c614bb5efca
-      internalID: 612162266
+      spriteID: 11b54ae745845064a9ae383db5189a5c
+      internalID: -401519240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schull_idle_forward_1
+      name: schull_attack_left_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fdc82c3b5095ea4099fe04551fb464f
-      internalID: 1002741278
+      spriteID: 682fa3aececf9af40b93b93e4a15ce4c
+      internalID: 346610214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schull_idle_forward_2
+      name: schull_attack_left_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,71 +166,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 786a5fc8f5a1a23468953449efafa696
-      internalID: 785432820
+      spriteID: 8cd5b70fec2e53343bedffb7fe9ed7ea
+      internalID: 714902038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schull_idle_forward_3
+      name: schull_attack_left_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 32
+        width: 40
         height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.77, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca9b0f5d77140ce4a85f29a8d5784a8a
-      internalID: -402191524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: schull_idle_forward_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 759ff54afd891d84e90ccd14b2b11db9
-      internalID: -729329703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: schull_idle_forward_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9602301a23d0f82498ff92516186dbf6
-      internalID: -957457892
+      spriteID: f2900c6d3276dc44bb52726d93012c29
+      internalID: -2093230970
       vertices: []
       indices: 
       edges: []
@@ -246,12 +204,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      schull_idle_forward_0: 612162266
-      schull_idle_forward_1: 1002741278
-      schull_idle_forward_2: 785432820
-      schull_idle_forward_3: -402191524
-      schull_idle_forward_4: -729329703
-      schull_idle_forward_5: -957457892
+      schull_attack_left_0: -401519240
+      schull_attack_left_1: 346610214
+      schull_attack_left_2: 714902038
+      schull_attack_left_3: -2093230970
+      schull_attack_left_4: -1823574551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

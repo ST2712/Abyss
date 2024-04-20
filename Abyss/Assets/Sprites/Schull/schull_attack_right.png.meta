@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,10 +113,10 @@ TextureImporter:
       name: schull_attack_right_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 23
-        height: 28
+        width: 32
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +136,8 @@ TextureImporter:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 36
-        height: 28
+        width: 32
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,6 +147,48 @@ TextureImporter:
       bones: []
       spriteID: 6416dd1e3662c8b47b26436df3e16752
       internalID: -1407713767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schull_attack_right_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e72201e6e9fd940bbc2118b13c1fa9
+      internalID: 628327793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schull_attack_right_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 40
+        height: 32
+      alignment: 9
+      pivot: {x: 0.23, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942e3c02da2b59e4fa9e0f8c58d0a490
+      internalID: 2026038574
       vertices: []
       indices: 
       edges: []
@@ -164,6 +206,9 @@ TextureImporter:
     nameFileIdTable:
       schull_attack_right_0: 2111783133
       schull_attack_right_1: -1407713767
+      schull_attack_right_2: 628327793
+      schull_attack_right_3: 2026038574
+      schull_attack_right_4: 92502460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

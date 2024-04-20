@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a23249c33252bb14c9413b8ed7423cd9
+guid: e2d8b7bee19252543a86e02515210694
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: schull_walk_right_0
+      name: schull_walk_left_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55029a438a664ff47bae75bfe43d428f
-      internalID: 410167972
+      spriteID: e324c09c4503e734da269235deee9477
+      internalID: -837041834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schull_walk_right_1
+      name: schull_walk_left_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d463e8598e281f64289fd8447e0f7079
-      internalID: -1090203868
+      spriteID: 3be62e022c90e994ea1445c821e08ba5
+      internalID: 1374002913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schull_walk_right_2
+      name: schull_walk_left_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cc9a747224b9be479a4af2f36808ad1
-      internalID: -2064173846
+      spriteID: 9dc329c424c3c5b4a841aa313b011ef7
+      internalID: 2064714478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schull_walk_right_3
+      name: schull_walk_left_3
       rect:
         serializedVersion: 2
         x: 96
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92bf74050b9a7084ebf6b85cfbea9640
-      internalID: 902465132
+      spriteID: 0496e8b1264875041be51e11cffb02e2
+      internalID: 1768794355
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      schull_walk_right_0: 410167972
-      schull_walk_right_1: -1090203868
-      schull_walk_right_2: -2064173846
-      schull_walk_right_3: 902465132
+      schull_walk_left_0: -837041834
+      schull_walk_left_1: 1374002913
+      schull_walk_left_2: 2064714478
+      schull_walk_left_3: 1768794355
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

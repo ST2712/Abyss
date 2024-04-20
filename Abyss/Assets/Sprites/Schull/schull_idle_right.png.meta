@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a23249c33252bb14c9413b8ed7423cd9
+guid: fa6e3eaffd9e4c749a86e4a15d737a30
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: schull_walk_right_0
+      name: schull_idle_right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55029a438a664ff47bae75bfe43d428f
-      internalID: 410167972
+      spriteID: 6b9dd907c6f885a48945852f848b5b1f
+      internalID: 612125506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schull_walk_right_1
+      name: schull_idle_right_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d463e8598e281f64289fd8447e0f7079
-      internalID: -1090203868
+      spriteID: 2c57ebfa39c97344c814c6dce8082b1d
+      internalID: 10998123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schull_walk_right_2
+      name: schull_idle_right_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cc9a747224b9be479a4af2f36808ad1
-      internalID: -2064173846
+      spriteID: 38bf595f409744b4dad1450a2f72dd1f
+      internalID: 1931779344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schull_walk_right_3
+      name: schull_idle_right_3
       rect:
         serializedVersion: 2
         x: 96
@@ -187,8 +187,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92bf74050b9a7084ebf6b85cfbea9640
-      internalID: 902465132
+      spriteID: 8c2c417dc4c986849a31609f6147703b
+      internalID: -1626403569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schull_idle_right_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c04ba61174e604c805684eb1edb671
+      internalID: 1662655912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: schull_idle_right_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbdc6dfbbe6bbb40b8f59a0c8c89d15
+      internalID: -580039119
       vertices: []
       indices: 
       edges: []
@@ -204,10 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      schull_walk_right_0: 410167972
-      schull_walk_right_1: -1090203868
-      schull_walk_right_2: -2064173846
-      schull_walk_right_3: 902465132
+      schull_idle_right_0: 612125506
+      schull_idle_right_1: 10998123
+      schull_idle_right_2: 1931779344
+      schull_idle_right_3: -1626403569
+      schull_idle_right_4: 1662655912
+      schull_idle_right_5: -580039119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
