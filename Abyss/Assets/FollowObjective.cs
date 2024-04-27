@@ -32,23 +32,10 @@ public class FollowObjective : MonoBehaviour
 
     private void UpdateAnimation(float xMovement, float yMovement)
     {
-        bool isWalking = xMovement!= 0 || yMovement!= 0;
-        animator.SetBool("IsWalking", isWalking);
+        bool isWalking = xMovement != 0 || yMovement != 0;
 
-        if (xMovement > 0)
-        {
-            animator.SetBool("WalkRight", true);
-            animator.SetBool("WalkLeft", false);
-        }
-        else if (xMovement < 0)
-        {
-            animator.SetBool("WalkRight", false);
-            animator.SetBool("WalkLeft", true);
-        }
-        else
-        {
-            animator.SetBool("WalkRight", false);
-            animator.SetBool("WalkLeft", false);
-        }
+        animator.SetBool("IsWalking", isWalking);
+        animator.SetFloat("xMovement", xMovement);
+        animator.SetFloat("yMovement", yMovement);
     }
 }
