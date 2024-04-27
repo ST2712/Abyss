@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class FollowObjective : MonoBehaviour
 {
     [SerializeField] private Transform target;
-    private NavMeshAgent navMeshAgent;
+    public static NavMeshAgent navMeshAgent;
 
     private void Start()
     {

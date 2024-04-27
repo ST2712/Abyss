@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if(health <= 0){
             audioSource.Play();
+            FollowObjective.navMeshAgent.speed = 0;
             die();
             this.enabled = false;
             GetComponent<Collider2D>().enabled = false;
