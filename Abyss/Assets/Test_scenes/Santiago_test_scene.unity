@@ -2883,6 +2883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1588027387}
+  animator: {fileID: 0}
 --- !u!212 &1139823561
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3141,6 +3142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1588027387}
+  animator: {fileID: 0}
 --- !u!195 &1737811650
 NavMeshAgent:
   m_ObjectHideFlags: 0
