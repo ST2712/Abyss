@@ -6,7 +6,8 @@ public class TopDownMovement : MonoBehaviour
 {
 
     [SerializeField] private float movementSpeed;
-    [SerializeField] private Vector2 direction;
+    private Vector2 direction;
+    [SerializeField] private Vector2 v2bounceSpeed;
     private Rigidbody2D rb2D;
 
     private float xMovement;
@@ -14,14 +15,14 @@ public class TopDownMovement : MonoBehaviour
 
     private Animator animator;
 
-    // Start is called before the first frame update
+    public bool canMove = true;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         xMovement = Input.GetAxisRaw("Horizontal");
@@ -40,6 +41,12 @@ public class TopDownMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb2D.MovePosition(rb2D.position + direction * movementSpeed * Time.fixedDeltaTime);
+        if(canMove){
+            rb2D.MovePosition(rb2D.position + direction * movementSpeed * Time.fixedDeltaTime);
+        }
+    }
+
+    public void bounce(Vector2  hitPoint){
+        rb2D.velocity = new Vector2(-v2bounceSpeed.x * hitPoint.x, -v2bounceSpeed.y * hitPoint.y);
     }
 }

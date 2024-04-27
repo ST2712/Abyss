@@ -34553,6 +34553,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1534712841683210651, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: v2bounceSpeed.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534712841683210651, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: v2bounceSpeed.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879398300378045968, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: noControlTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4879398300378045968, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 

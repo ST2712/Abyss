@@ -16,9 +16,15 @@ public class Health : MonoBehaviour
 
     private AudioSource heartBite;
 
+    private TopDownMovement topDownMovement;
+    [SerializeField] private float noControlTime;
+    private Animator animator;
+
     void Start()
     {
         heartBite = GetComponent<AudioSource>();
+        topDownMovement = GetComponent<TopDownMovement>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -58,6 +64,21 @@ public class Health : MonoBehaviour
         }else{
             heartBite.Stop();
         }
+    }
+
+    public void takeDamage(int damage, Vector2 hitPoint)
+    {
+        health -= damage;
+        //animator.SetTrigger("Hurt");
+        StartCoroutine(NoControl());
+        topDownMovement.bounce(hitPoint);
+    }
+
+    private IEnumerator NoControl()
+    {
+        topDownMovement.canMove = false;
+        yield return new WaitForSeconds(noControlTime);
+        topDownMovement.canMove = true;
     }
 
     IEnumerator PauseSoundAndResume()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -20,7 +21,7 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if(health <= 0){
             audioSource.Play();
-            FollowObjective.navMeshAgent.speed = 0;
+            //FollowObjective.navMeshAgent.speed = 0;
             die();
             this.enabled = false;
             GetComponent<Collider2D>().enabled = false;
@@ -34,9 +35,14 @@ public class Enemy : MonoBehaviour
         Instantiate(coin, transform.position, Quaternion.identity);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision){
+        if(collision.gameObject.CompareTag("Player")){
+            collision.gameObject.GetComponent<Health>().takeDamage(1, collision.GetContact(0).point);
+        }
     }
 }
