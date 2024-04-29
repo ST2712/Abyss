@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
     public int health;
     public int numberOfHearts;
     public bool extraHealth;
-    
+
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
@@ -29,7 +29,7 @@ public class Health : MonoBehaviour
 
     void Update()
     {
-        if(health > numberOfHearts)
+        if (health > numberOfHearts)
         {
             health = numberOfHearts;
         }
@@ -48,30 +48,42 @@ public class Health : MonoBehaviour
             hearts[i].enabled = i < numberOfHearts;
         }
 
-        if(extraHealth)
+        if (extraHealth)
         {
             hearts[3].sprite = extraHeart;
             hearts[3].enabled = true;
         }
 
-        if(health == 1)
+        if (health == 1)
         {
             if (!heartBite.isPlaying)
             {
                 heartBite.Play();
                 StartCoroutine(PauseSoundAndResume());
             }
-        }else{
+        }
+        else
+        {
             heartBite.Stop();
         }
     }
 
     public void takeDamage(int damage, Vector2 hitPoint)
     {
-        health -= damage;
-        //animator.SetTrigger("Hurt");
-        StartCoroutine(NoControl());
-        topDownMovement.bounce(hitPoint);
+        if (extraHealth)
+        {
+            extraHealth = false;
+            StartCoroutine(NoControl());
+            topDownMovement.bounce(hitPoint);
+            return;
+        }
+        else
+        {
+            health -= damage;
+            //animator.SetTrigger("Hurt");
+            StartCoroutine(NoControl());
+            topDownMovement.bounce(hitPoint);
+        }
     }
 
     private IEnumerator NoControl()
@@ -85,7 +97,7 @@ public class Health : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
 
-        if(heartBite.isPlaying)
+        if (heartBite.isPlaying)
         {
             heartBite.Stop();
             heartBite.PlayDelayed(1f);
