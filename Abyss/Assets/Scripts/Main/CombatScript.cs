@@ -6,7 +6,11 @@ using UnityEngine;
 public class CombatScript : MonoBehaviour
 {
 
-    [SerializeField] private Transform punchController;
+    [SerializeField] private Transform ratioPunchController;
+    [SerializeField] private Transform normalPunchControllerRight;
+    [SerializeField] private Transform normalPunchControllerLeft;
+    [SerializeField] private Transform normalPunchControllerUp;
+    [SerializeField] private Transform normalPunchControllerDown;
     [SerializeField] private float ratioPunch;
     [SerializeField] private float normalRatioPunch;
     [SerializeField] private float punchDamage;
@@ -27,7 +31,7 @@ public class CombatScript : MonoBehaviour
 
         animator.SetTrigger("SpinPunch");
 
-        Collider2D[] objects = Physics2D.OverlapCircleAll(punchController.position, ratioPunch);
+        Collider2D[] objects = Physics2D.OverlapCircleAll(ratioPunchController.position, ratioPunch);
 
         foreach (Collider2D obj in objects)
         {
@@ -40,9 +44,69 @@ public class CombatScript : MonoBehaviour
 
     private void directionalPunch()
     {
+        /*
         animator.SetTrigger("NormalPunch");
 
-        Collider2D[] objects = Physics2D.OverlapCircleAll(punchController.position, normalRatioPunch);
+        Ray2D ray = new Ray2D(punchController.position, Vector2.right);
+        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 2.0f);
+
+        if (hit)
+        {
+            Debug.DrawLine(ray.origin, hit.point, Color.green);
+            if (hit.collider.CompareTag("Enemy"))
+            {
+                hit.transform.GetComponent<Enemy>().takeDamage(punchDamage);
+            }
+        }
+        else
+        {
+            Debug.DrawRay(ray.origin, ray.direction * 2.0f, Color.red);
+        }*/
+
+        Vector2 direction = normalPunchControllerDown.position; ;
+        float xLast = animator.GetFloat("xLast");
+        float yLast = animator.GetFloat("yLast");
+
+        if (xLast == 0 && yLast == 0)
+        {
+            direction = normalPunchControllerDown.position;
+        }
+        else if (xLast == 1 && yLast == 0)
+        {
+            direction = normalPunchControllerRight.position;
+        }
+        else if (xLast == -1 && yLast == 0)
+        {
+            direction = normalPunchControllerLeft.position;
+        }
+        else if (xLast == 0 && yLast == 1)
+        {
+            direction = normalPunchControllerUp.position;
+        }
+        else if (xLast == 0 && yLast == -1)
+        {
+            direction = normalPunchControllerDown.position;
+        }
+        else if (xLast == 1 && yLast == 1)
+        {
+            direction = normalPunchControllerUp.position;
+        }
+        else if (xLast == -1 && yLast == 1)
+        {
+            direction = normalPunchControllerUp.position;
+        }
+        else if (xLast == 1 && yLast == -1)
+        {
+            direction = normalPunchControllerDown.position;
+        }
+        else if (xLast == -1 && yLast == -1)
+        {
+            direction = normalPunchControllerDown.position;
+        }
+
+        animator.SetTrigger("NormalPunch");
+
+        Collider2D[] objects = Physics2D.OverlapCircleAll(direction, normalRatioPunch);
 
         foreach (Collider2D obj in objects)
         {
@@ -51,16 +115,26 @@ public class CombatScript : MonoBehaviour
                 obj.transform.GetComponent<Enemy>().takeDamage(punchDamage);
             }
         }
+
     }
 
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(punchController.position, ratioPunch);
+        Gizmos.DrawWireSphere(ratioPunchController.position, ratioPunch);
 
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(punchController.position, normalRatioPunch);
+        Gizmos.DrawWireSphere(normalPunchControllerRight.position, normalRatioPunch);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(normalPunchControllerLeft.position, normalRatioPunch);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(normalPunchControllerUp.position, normalRatioPunch);
+
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(normalPunchControllerDown.position, normalRatioPunch);
     }
     // Start is called before the first frame update
     void Start()

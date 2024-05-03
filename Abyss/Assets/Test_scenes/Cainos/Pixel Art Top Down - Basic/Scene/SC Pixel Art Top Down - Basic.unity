@@ -4290,6 +4290,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5100217437599595380, guid: 8d15c39fd3e3cab47ab96fbaf6dc2f92, type: 3}
   m_PrefabInstance: {fileID: 196271494}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &201646383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5619838535240744439, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+  m_PrefabInstance: {fileID: 5821766334029956495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &208156627
 GameObject:
   m_ObjectHideFlags: 0
@@ -16057,6 +16062,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8228059593326255414, guid: 84d669757910f1f488023c92e71fcad5, type: 3}
   m_PrefabInstance: {fileID: 928987253}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &942005446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942005447}
+  m_Layer: 0
+  m_Name: NormalPunchControllerUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &942005447
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942005446}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.03, y: 0.95, z: 9.479289}
+  m_LocalScale: {x: 1, y: 1, z: 0.43458042}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 61725984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &961753988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17336,6 +17372,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4526411729153331029, guid: 8c66149e58003104daf96668db118b4f, type: 3}
   m_PrefabInstance: {fileID: 1052010887}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1055448303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055448304}
+  m_Layer: 0
+  m_Name: NormalPunchControllerDown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1055448304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055448303}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.05, y: -0.02, z: 9.479289}
+  m_LocalScale: {x: 1, y: 1, z: 0.43458042}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 61725984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1058427149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24657,6 +24724,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1224976495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224976496}
+  m_Layer: 0
+  m_Name: NormalPunchControllerLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1224976496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224976495}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.51, y: 0.28999996, z: 9.479289}
+  m_LocalScale: {x: 1, y: 1, z: 0.43458042}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 61725984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1236211214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30101,6 +30199,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9132832536761082797, guid: fd980c817c63af4458df40a61e529e93, type: 3}
   m_PrefabInstance: {fileID: 1755155735}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1770569273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1770569274}
+  m_Layer: 0
+  m_Name: NormalPunchControllerRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1770569274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770569273}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.49, y: 0.29, z: 9.479289}
+  m_LocalScale: {x: 1, y: 1, z: 0.43458042}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 61725984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1770859209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34739,11 +34868,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1534593082952955996, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.77
+      value: 5.79
       objectReference: {fileID: 0}
     - target: {fileID: 1534593082952955996, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.63
+      value: 1.51
       objectReference: {fileID: 0}
     - target: {fileID: 1534593082952955996, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34785,6 +34914,46 @@ PrefabInstance:
       propertyPath: v2bounceSpeed.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2703559627386341017, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757183136638266412, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: ratioPunch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757183136638266412, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: normalRatioPunch
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757183136638266412, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: ratioPunchController
+      value: 
+      objectReference: {fileID: 201646383}
+    - target: {fileID: 4757183136638266412, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: normalPunchController
+      value: 
+      objectReference: {fileID: 1770569274}
+    - target: {fileID: 4757183136638266412, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: normalPunchControllerUp
+      value: 
+      objectReference: {fileID: 942005447}
+    - target: {fileID: 4757183136638266412, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: normalPunchControllerDown
+      value: 
+      objectReference: {fileID: 1055448304}
+    - target: {fileID: 4757183136638266412, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: normalPunchControllerLeft
+      value: 
+      objectReference: {fileID: 1224976496}
+    - target: {fileID: 4757183136638266412, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: normalPunchControllerRight
+      value: 
+      objectReference: {fileID: 1770569274}
+    - target: {fileID: 4879398300378045968, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: health
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4879398300378045968, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
       propertyPath: noControlTime
       value: 1
@@ -34805,6 +34974,18 @@ PrefabInstance:
       propertyPath: hearts.Array.data[3]
       value: 
       objectReference: {fileID: 81883045}
+    - target: {fileID: 5253460215175729192, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: m_Name
+      value: RatioPunchController
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619838535240744439, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.024
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619838535240744439, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47
+      objectReference: {fileID: 0}
     - target: {fileID: 7290914483660563849, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
       propertyPath: m_Name
       value: Player
@@ -34815,7 +34996,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1534593082952955996, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1770569274}
+    - targetCorrespondingSourceObject: {fileID: 1534593082952955996, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1224976496}
+    - targetCorrespondingSourceObject: {fileID: 1534593082952955996, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 942005447}
+    - targetCorrespondingSourceObject: {fileID: 1534593082952955996, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1055448304}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7290914483660563849, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
       insertIndex: 6

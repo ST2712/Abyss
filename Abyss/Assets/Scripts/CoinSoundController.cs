@@ -20,7 +20,6 @@ public class CoinSoundController : MonoBehaviour
 
     public void playSound(AudioClip audioClip)
     {
-        Debug.Log("Playing sound");
         audioSource.PlayOneShot(audioClip);
     }
 
