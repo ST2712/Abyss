@@ -114,7 +114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 107
-        y: 2
+        y: 19
         width: 254
         height: 156
       alignment: 9
@@ -135,7 +135,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 110
-        y: 161
+        y: 178
         width: 124
         height: 151
       alignment: 0
@@ -156,7 +156,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 23
-        y: 144
+        y: 169
         width: 20
         height: 20
       alignment: 0
@@ -176,8 +176,8 @@ TextureImporter:
       name: inventoryui_3
       rect:
         serializedVersion: 2
-        x: 3
-        y: 61
+        x: 5
+        y: 88
         width: 101
         height: 76
       alignment: 0
@@ -198,7 +198,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 234
-        y: 161
+        y: 178
         width: 124
         height: 151
       alignment: 0
@@ -218,8 +218,8 @@ TextureImporter:
       name: inventoryui_5
       rect:
         serializedVersion: 2
-        x: 5
-        y: 171
+        x: 6
+        y: 194
         width: 48
         height: 46
       alignment: 0
@@ -239,8 +239,8 @@ TextureImporter:
       name: inventoryui_6
       rect:
         serializedVersion: 2
-        x: 53
-        y: 171
+        x: 54
+        y: 194
         width: 50
         height: 46
       alignment: 0
@@ -261,11 +261,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 5
+        y: 34
         width: 104
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,6 +273,48 @@ TextureImporter:
       bones: []
       spriteID: f97b9da884bd7444893c2defaa595c25
       internalID: -1751470735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventoryui_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 242
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc7cf0405cd66d45944e3004a457cd2
+      internalID: 394753392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventoryui_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 5
+        width: 103
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9d804db63ba8940bdc74427dadb135
+      internalID: -173611731
       vertices: []
       indices: 
       edges: []
@@ -296,6 +338,8 @@ TextureImporter:
       inventoryui_5: 415891623
       inventoryui_6: 59599410
       inventoryui_7: -1751470735
+      inventoryui_8: 394753392
+      inventoryui_9: -173611731
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
