@@ -66,6 +66,7 @@ public class Health : MonoBehaviour
         {
             heartBite.Stop();
         }
+
     }
 
     public void takeDamage(int damage, Vector2 hitPoint)
@@ -80,6 +81,12 @@ public class Health : MonoBehaviour
         else
         {
             health -= damage;
+            if(health <= 0)
+            {
+            animator.SetTrigger("Dead");
+            GetComponent<Collider2D>().enabled = false;
+            Destroy(gameObject, 4);
+            }
             //animator.SetTrigger("Hurt");
             StartCoroutine(NoControl());
             topDownMovement.bounce(hitPoint);
