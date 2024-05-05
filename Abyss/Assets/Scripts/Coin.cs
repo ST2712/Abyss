@@ -6,12 +6,15 @@ public class Coin : MonoBehaviour
 {
     [SerializeField] private AudioClip coinSoundClip;
     [SerializeField] public GameObject soundController;
+    [SerializeField] private int coinValue;
+    [SerializeField] public Score score;
     AudioSource audioSource;
 
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            score.getPoints(coinValue);
             soundController.GetComponent<CoinSoundController>().playSound(coinSoundClip);
             Destroy(gameObject);
         }

@@ -46,6 +46,7 @@ public class Enemy : MonoBehaviour
     {
         animator.SetTrigger("Dead");
         coin.GetComponent<Coin>().soundController = soundController;
+        coin.GetComponent<Coin>().score = GameObject.FindGameObjectWithTag("Amount").GetComponent<Score>();
         Instantiate(coin, transform.position, Quaternion.identity);
     }
 
