@@ -1,6 +1,6 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 
 public class UIInventoryPage : MonoBehaviour
@@ -9,24 +9,58 @@ public class UIInventoryPage : MonoBehaviour
     private UIInventoryItem itemPrefab;
 
     [SerializeField]
-    private RectTransform contentPanel; 
+    private RectTransform contentPanel;
 
     List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
 
-    public void InitializeInventoryUI(int inventorysize){
-        for(int i = 0; i < inventorysize; i++){
-            UIInventoryItem uiItem = Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
+    public void InitializeInventoryUI(int inventorysize)
+    {
+        for (int i = 0; i < inventorysize; i++)
+        {
+            UIInventoryItem uiItem = 
+                Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
             uiItem.transform.SetParent(contentPanel, false);
             listOfUIItems.Add(uiItem);
+            /*uiItem.OnItemClicked += HandleItemSelection;
+            uiItem.OnItemBeginDrag += HandleBeginDrag;
+            uiItem.OnItemDroppedOn += HandleSwap;
+            uiItem.OnItemEndDrag += HandleEndDrag;
+            uiItem.OnRightMouseBtnClick += HandleShowItemActions;*/
         }
     }
 
-    public void Show(){
+    private void HandleShowItemActions(UIInventoryItem obj)
+    {
+
+    }
+
+    private void HandleEndDrag(UIInventoryItem obj)
+    {
+
+    }
+
+    private void HandleSwap(UIInventoryItem obj)
+    {
+
+    }
+
+    private void HandleBeginDrag(UIInventoryItem obj)
+    {
+
+    }
+
+    private void HandleItemSelection(UIInventoryItem obj)
+    {
+        Debug.Log(obj.name);
+    }
+
+    public void Show()
+    {
         gameObject.SetActive(true);
     }
 
-    public void Hide(){
-        gameObject.SetActive(false);    
+    public void Hide()
+    {
+        gameObject.SetActive(false);
     }
-
 }
