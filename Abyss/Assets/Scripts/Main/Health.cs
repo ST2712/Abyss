@@ -19,16 +19,25 @@ public class Health : MonoBehaviour
     private TopDownMovement topDownMovement;
     [SerializeField] private float noControlTime;
     private Animator animator;
+    private GameObject player;
+    private Vector2 diePoint;
 
     void Start()
     {
         heartBite = GetComponent<AudioSource>();
         topDownMovement = GetComponent<TopDownMovement>();
         animator = GetComponent<Animator>();
+        player = GameObject.Find("Player");
+
     }
 
     void Update()
     {
+
+        if(health <= 0){
+            player.GetComponent<Transform>().position = diePoint;
+        }
+
         if (health > numberOfHearts)
         {
             health = numberOfHearts;
@@ -81,15 +90,37 @@ public class Health : MonoBehaviour
         else
         {
             health -= damage;
-            if(health <= 0)
+            if (health <= 0)
             {
-            animator.SetTrigger("Dead");
-            GetComponent<Collider2D>().enabled = false;
-            Destroy(gameObject, 4);
+                animator.SetTrigger("Dead");
+                GetComponent<Collider2D>().enabled = false;
+                diePoint = player.transform.position;
+                Destroy(gameObject, 4);
             }
             //animator.SetTrigger("Hurt");
             StartCoroutine(NoControl());
             topDownMovement.bounce(hitPoint);
+        }
+    }
+
+        public void takeDamage(int damage)
+    {
+        if (extraHealth)
+        {
+            extraHealth = false;
+            return;
+        }
+        else
+        {
+            health -= damage;
+            if (health <= 0)
+            {
+                animator.SetTrigger("Dead");
+                GetComponent<Collider2D>().enabled = false;
+                diePoint = player.transform.position;
+                Destroy(gameObject, 4);
+            }
+            //animator.SetTrigger("Hurt");
         }
     }
 

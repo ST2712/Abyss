@@ -7,19 +7,32 @@ public class Enemy : MonoBehaviour
 {
 
     [SerializeField] private float health;
+    [SerializeField] private float attackRange;
+    [SerializeField] private float attackCooldown;
+    [SerializeField] private Transform normalAttackRightController;
+    [SerializeField] private Transform normalAttackLeftController;
+    [SerializeField] private Transform attackRangeController;
+    [SerializeField] private float rangeToAttack;
     private Animator animator;
     private AudioSource audioSource;
     public GameObject coin;
     public GameObject soundController;
+    private GameObject player;
+    private int attackDamage;
+    private bool canAttack = true;
     void Start()
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        attackDamage = 1;
     }
 
-    public void takeDamage(float damage){
+    public void takeDamage(float damage)
+    {
         health -= damage;
-        if(health <= 0){
+        if (health <= 0)
+        {
             audioSource.Play();
             //FollowObjective.navMeshAgent.speed = 0;
             die();
@@ -29,7 +42,8 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void die(){
+    private void die()
+    {
         animator.SetTrigger("Dead");
         coin.GetComponent<Coin>().soundController = soundController;
         Instantiate(coin, transform.position, Quaternion.identity);
@@ -37,12 +51,43 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        
+        if (player != null && Vector2.Distance(transform.position, player.transform.position) <= rangeToAttack && canAttack)
+        {
+            StartCoroutine(Attack());
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision){
-        if(collision.gameObject.CompareTag("Player")){
+    private IEnumerator Attack()
+    {
+        canAttack = false;
+        animator.SetTrigger("Attack");
+        yield return new WaitForSeconds(0.5f); // Tiempo de la animación de ataque, ajusta según tu animación
+        if (Vector2.Distance(transform.position, player.transform.position) <= attackRange)
+        {
+            //player.GetComponent<Health>().takeDamage(attackDamage);
+            Collider2D[] objects = Physics2D.OverlapCircleAll(normalAttackRightController.position, attackRange);
+        }
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
             collision.gameObject.GetComponent<Health>().takeDamage(1, collision.GetContact(0).point);
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(normalAttackRightController.position, attackRange);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(normalAttackLeftController.position, attackRange);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(attackRangeController.position, rangeToAttack);
     }
 }

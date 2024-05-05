@@ -27,6 +27,7 @@ public class FollowObjective : MonoBehaviour
         Vector3 direction = (target.position - transform.position).normalized;
         xMovement = direction.x;
         yMovement = direction.y;
+
         UpdateAnimation(xMovement, yMovement);
     }
 
