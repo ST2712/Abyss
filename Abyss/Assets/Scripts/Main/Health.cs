@@ -85,6 +85,7 @@ public class Health : MonoBehaviour
             extraHealth = false;
             animator.SetTrigger("Hurt");
             StartCoroutine(NoControl());
+            StartCoroutine(NoCollision());
             topDownMovement.bounce(hitPoint);
             return;
         }
@@ -100,6 +101,7 @@ public class Health : MonoBehaviour
             }
             animator.SetTrigger("Hurt");
             StartCoroutine(NoControl());
+            StartCoroutine(NoCollision());
             topDownMovement.bounce(hitPoint);
         }
     }
@@ -130,6 +132,13 @@ public class Health : MonoBehaviour
         topDownMovement.canMove = false;
         yield return new WaitForSeconds(noControlTime);
         topDownMovement.canMove = true;
+    }
+
+        private IEnumerator NoCollision()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7, true);
+        yield return new WaitForSeconds(noControlTime);
+        Physics2D.IgnoreLayerCollision(6, 7, false);
     }
 
     IEnumerator PauseSoundAndResume()
