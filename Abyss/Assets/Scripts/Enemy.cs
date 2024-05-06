@@ -76,7 +76,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Health>().takeDamage(1, collision.GetContact(0).point);
+            collision.gameObject.GetComponent<Health>().takeDamage(1, collision.GetContact(0).normal);
         }
     }
 

@@ -35100,11 +35100,11 @@ PrefabInstance:
       objectReference: {fileID: 1770569274}
     - target: {fileID: 4879398300378045968, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
       propertyPath: health
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4879398300378045968, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
       propertyPath: extraHealth
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4879398300378045968, guid: a475a0513bcb1fa43aba830bedcb8aec, type: 3}
       propertyPath: noControlTime
@@ -36322,19 +36322,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 50.5
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -27.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

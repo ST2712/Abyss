@@ -83,6 +83,7 @@ public class Health : MonoBehaviour
         if (extraHealth)
         {
             extraHealth = false;
+            animator.SetTrigger("Hurt");
             StartCoroutine(NoControl());
             topDownMovement.bounce(hitPoint);
             return;
@@ -97,7 +98,7 @@ public class Health : MonoBehaviour
                 diePoint = player.transform.position;
                 Destroy(gameObject, 4);
             }
-            //animator.SetTrigger("Hurt");
+            animator.SetTrigger("Hurt");
             StartCoroutine(NoControl());
             topDownMovement.bounce(hitPoint);
         }

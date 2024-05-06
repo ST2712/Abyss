@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinSoundClip: {fileID: 8300000, guid: 7a682d9177a150041b15dbebeabcad18, type: 3}
-  soundController: {fileID: 3912029987298787991, guid: a45b1d5242cbb004cbc51391ae6d0a07, type: 3}
+  soundController: {fileID: 0}
   coinValue: 1
   score: {fileID: 0}
 --- !u!50 &-3178618788933514272
