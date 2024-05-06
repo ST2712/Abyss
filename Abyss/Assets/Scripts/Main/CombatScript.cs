@@ -151,19 +151,6 @@ public class CombatScript : MonoBehaviour
 
     void Update()
     {
-        xMovement = Input.GetAxisRaw("Horizontal");
-        yMovement = Input.GetAxisRaw("Vertical");
-        animator.SetFloat("xMovement", xMovement);
-        animator.SetFloat("yMovement", yMovement);
-
-        if (xMovement != 0 || yMovement != 0)
-        {
-            animator.SetFloat("xLast", xMovement);
-            animator.SetFloat("yLast", yMovement);
-
-        }
-        direction = new Vector2(xMovement, yMovement).normalized;
-
         if (timeNextPunch > 0)
         {
             timeNextPunch -= Time.deltaTime;

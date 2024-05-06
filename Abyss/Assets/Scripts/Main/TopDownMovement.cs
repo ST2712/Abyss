@@ -17,26 +17,32 @@ public class TopDownMovement : MonoBehaviour
 
     public bool canMove = true;
 
+    private bool axesDisabled = false;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
+        axesDisabled = false;
     }
 
     void Update()
     {
-        xMovement = Input.GetAxisRaw("Horizontal");
-        yMovement = Input.GetAxisRaw("Vertical");
-        animator.SetFloat("xMovement", xMovement);
-        animator.SetFloat("yMovement", yMovement);
-
-        if (xMovement != 0 || yMovement != 0)
+        if (!axesDisabled)
         {
-            animator.SetFloat("xLast", xMovement);
-            animator.SetFloat("yLast", yMovement);
+            xMovement = Input.GetAxisRaw("Horizontal");
+            yMovement = Input.GetAxisRaw("Vertical");
+            animator.SetFloat("xMovement", xMovement);
+            animator.SetFloat("yMovement", yMovement);
 
+            if (xMovement != 0 || yMovement != 0)
+            {
+                animator.SetFloat("xLast", xMovement);
+                animator.SetFloat("yLast", yMovement);
+            }
+
+            direction = new Vector2(xMovement, yMovement).normalized;
         }
-        direction = new Vector2(xMovement, yMovement).normalized;
     }
 
     private void FixedUpdate()
@@ -56,7 +62,9 @@ public class TopDownMovement : MonoBehaviour
     {
         float auxiliarMovementSpeed = movementSpeed;
         movementSpeed = 0;
+        axesDisabled = true;
         yield return new WaitForSeconds(time);
+        axesDisabled = false;
         movementSpeed = auxiliarMovementSpeed;
     }
 }
