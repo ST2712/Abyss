@@ -5,7 +5,7 @@ using UnityEngine;
 public class TopDownMovement : MonoBehaviour
 {
 
-    [SerializeField] private float movementSpeed;
+    [SerializeField] public float movementSpeed;
     private Vector2 direction;
     [SerializeField] private Vector2 v2bounceSpeed;
     private Rigidbody2D rb2D;
@@ -30,7 +30,7 @@ public class TopDownMovement : MonoBehaviour
         animator.SetFloat("xMovement", xMovement);
         animator.SetFloat("yMovement", yMovement);
 
-        if(xMovement != 0 || yMovement != 0)
+        if (xMovement != 0 || yMovement != 0)
         {
             animator.SetFloat("xLast", xMovement);
             animator.SetFloat("yLast", yMovement);
@@ -41,12 +41,22 @@ public class TopDownMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(canMove){
+        if (canMove)
+        {
             rb2D.MovePosition(rb2D.position + direction * movementSpeed * Time.fixedDeltaTime);
         }
     }
 
-    public void bounce(Vector2  hitPoint){
+    public void bounce(Vector2 hitPoint)
+    {
         rb2D.velocity = new Vector2(-v2bounceSpeed.x * hitPoint.x, -v2bounceSpeed.y * hitPoint.y);
+    }
+
+    public IEnumerator CancelSpeed(float time)
+    {
+        float auxiliarMovementSpeed = movementSpeed;
+        movementSpeed = 0;
+        yield return new WaitForSeconds(time);
+        movementSpeed = auxiliarMovementSpeed;
     }
 }

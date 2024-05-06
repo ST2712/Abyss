@@ -16,7 +16,6 @@ public class CombatScript : MonoBehaviour
     [SerializeField] public float punchDamage;
     [SerializeField] private float timeBetweenPunches;
     [SerializeField] private float timeNextPunch;
-    [SerializeField] private float movementSpeed;
     private Vector2 direction;
 
     private Rigidbody2D rb2D;
@@ -26,9 +25,9 @@ public class CombatScript : MonoBehaviour
 
     private Animator animator;
 
+
     private void circlePunch()
     {
-
         animator.SetTrigger("SpinPunch");
 
         Collider2D[] objects = Physics2D.OverlapCircleAll(ratioPunchController.position, ratioPunch);
@@ -40,7 +39,10 @@ public class CombatScript : MonoBehaviour
                 obj.transform.GetComponent<Enemy>().takeDamage(punchDamage);
             }
         }
+        GameObject player = GameObject.Find("Player");
+        StartCoroutine(player.GetComponent<TopDownMovement>().CancelSpeed(0.333f));
     }
+
 
     private void directionalPunch()
     {
@@ -62,6 +64,9 @@ public class CombatScript : MonoBehaviour
         {
             Debug.DrawRay(ray.origin, ray.direction * 2.0f, Color.red);
         }*/
+
+        GameObject player = GameObject.Find("Player");
+        StartCoroutine(player.GetComponent<TopDownMovement>().CancelSpeed(0.7f));
 
         Vector2 direction = normalPunchControllerDown.position; ;
         float xLast = animator.GetFloat("xLast");
@@ -136,14 +141,14 @@ public class CombatScript : MonoBehaviour
         Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(normalPunchControllerDown.position, normalRatioPunch);
     }
-    // Start is called before the first frame update
+
+
     void Start()
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         xMovement = Input.GetAxisRaw("Horizontal");
