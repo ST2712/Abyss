@@ -172,6 +172,7 @@ public class CombatScript : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.P).ToString().ToLower() == "p") && timeNextPunch <= 0)
         {
             directionalPunch();
+            animator.SetTrigger("Movement");
             timeNextPunch = timeBetweenPunches;
         }
     }
