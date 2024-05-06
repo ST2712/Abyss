@@ -28,6 +28,7 @@ public class Health : MonoBehaviour
         topDownMovement = GetComponent<TopDownMovement>();
         animator = GetComponent<Animator>();
         animator.SetBool("isDead", false);
+        animator.SetBool("canAttack", true);
         player = GameObject.Find("Player");
 
     }
@@ -81,6 +82,8 @@ public class Health : MonoBehaviour
 
     public void takeDamage(int damage, Vector2 hitPoint)
     {
+        animator.SetBool("canAttack", false);
+        player.GetComponent<CombatScript>().punchDamage = 0;
         if (extraHealth)
         {
             extraHealth = false;
@@ -135,6 +138,8 @@ public class Health : MonoBehaviour
         topDownMovement.canMove = false;
         yield return new WaitForSeconds(noControlTime);
         topDownMovement.canMove = true;
+        animator.SetBool("canAttack", true);
+        player.GetComponent<CombatScript>().punchDamage = 20;
     }
 
         private IEnumerator NoCollision()
