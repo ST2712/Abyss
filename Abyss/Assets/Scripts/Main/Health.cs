@@ -27,6 +27,7 @@ public class Health : MonoBehaviour
         heartBite = GetComponent<AudioSource>();
         topDownMovement = GetComponent<TopDownMovement>();
         animator = GetComponent<Animator>();
+        animator.SetBool("isDead", false);
         player = GameObject.Find("Player");
 
     }
@@ -94,7 +95,9 @@ public class Health : MonoBehaviour
             health -= damage;
             if (health <= 0)
             {
+                animator.SetBool("isDead", true);
                 animator.SetTrigger("Dead");
+                player.GetComponent<CombatScript>().punchDamage = 0;
                 GetComponent<Collider2D>().enabled = false;
                 diePoint = player.transform.position;
                 Destroy(gameObject, 4);
