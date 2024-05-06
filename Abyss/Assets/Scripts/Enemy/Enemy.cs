@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
-        attackDamage = 1;
+        //attackDamage = 1;
     }
 
     public void takeDamage(float damage)
@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
     {
         animator.SetTrigger("Dead");
         coin.GetComponent<Coin>().soundController = soundController;
-        coin.GetComponent<Coin>().score = GameObject.FindGameObjectWithTag("Amount").GetComponent<Score>();
+        //coin.GetComponent<Coin>().score = GameObject.FindGameObjectWithTag("Amount").GetComponent<Score>();
         Instantiate(coin, transform.position, Quaternion.identity);
     }
 

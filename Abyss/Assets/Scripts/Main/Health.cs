@@ -82,7 +82,7 @@ public class Health : MonoBehaviour
 
     public void takeDamage(int damage, Vector2 hitPoint)
     {
-        animator.SetBool("canAttack", false);
+        player.GetComponent<CombatScript>().enableAttack(false);
         player.GetComponent<CombatScript>().punchDamage = 0;
         if (extraHealth)
         {
@@ -138,7 +138,7 @@ public class Health : MonoBehaviour
         topDownMovement.canMove = false;
         yield return new WaitForSeconds(noControlTime);
         topDownMovement.canMove = true;
-        animator.SetBool("canAttack", true);
+        player.GetComponent<CombatScript>().enableAttack(true);
         player.GetComponent<CombatScript>().punchDamage = 20;
     }
 

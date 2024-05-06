@@ -142,11 +142,16 @@ public class CombatScript : MonoBehaviour
         Gizmos.DrawWireSphere(normalPunchControllerDown.position, normalRatioPunch);
     }
 
+    public void enableAttack(bool canAttack){
+        animator.SetBool("canAttack", canAttack);
+    }
+
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
+        animator.SetBool("canAttack", true);
     }
 
     void Update()
