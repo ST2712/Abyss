@@ -66,8 +66,9 @@ public class UIInventoryItem : MonoBehaviour
         OnItemEndDrag?.Invoke(this);
     }
 
-    public void OnPointerClick(BaseEventData data)
+        public void OnPointerClick(BaseEventData data)
     {
+        Debug.Log($"Clicked {gameObject.name}");
         if (empty)
             return;
         PointerEventData pointerData = (PointerEventData)data;
@@ -80,4 +81,5 @@ public class UIInventoryItem : MonoBehaviour
             OnItemClicked?.Invoke(this);
         }
     }
+
 }

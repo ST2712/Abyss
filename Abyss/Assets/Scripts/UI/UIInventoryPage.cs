@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class UIInventoryPage : MonoBehaviour
@@ -21,11 +22,12 @@ public class UIInventoryPage : MonoBehaviour
                 Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
             uiItem.transform.SetParent(contentPanel, false);
             listOfUIItems.Add(uiItem);
-            /*uiItem.OnItemClicked += HandleItemSelection;
+            uiItem.OnItemClicked += HandleItemSelection;
+            Debug.Log(uiItem);
             uiItem.OnItemBeginDrag += HandleBeginDrag;
             uiItem.OnItemDroppedOn += HandleSwap;
             uiItem.OnItemEndDrag += HandleEndDrag;
-            uiItem.OnRightMouseBtnClick += HandleShowItemActions;*/
+            uiItem.OnRightMouseBtnClick += HandleShowItemActions;
         }
     }
 
@@ -51,7 +53,7 @@ public class UIInventoryPage : MonoBehaviour
 
     private void HandleItemSelection(UIInventoryItem obj)
     {
-        Debug.Log(obj.name);
+        Debug.Log("hola");
     }
 
     public void Show()
