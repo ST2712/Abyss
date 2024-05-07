@@ -6,13 +6,24 @@ using UnityEngine;
 
 public class UIInventoryPage : MonoBehaviour
 {
-    [SerializeField]
-    private UIInventoryItem itemPrefab;
+    [SerializeField] private UIInventoryItem itemPrefab;
 
-    [SerializeField]
-    private RectTransform contentPanel;
+    [SerializeField] private RectTransform contentPanel;
+    
+    [SerializeField] private UIInventoryDescription itemDescription;
 
     List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
+
+    //Temp Variables
+    public Sprite image;
+    public int quantity;
+    public string title, description;
+
+
+    private void Awake(){
+        Hide();
+        itemDescription.ResetDescription();
+    }
 
     public void InitializeInventoryUI(int inventorysize)
     {
@@ -53,12 +64,16 @@ public class UIInventoryPage : MonoBehaviour
 
     private void HandleItemSelection(UIInventoryItem obj)
     {
-        Debug.Log("hola");
+        itemDescription.setDescription(image, title, description);
+        listOfUIItems[0].Select();
     }
 
     public void Show()
     {
         gameObject.SetActive(true);
+        itemDescription.ResetDescription();
+
+        listOfUIItems[0].SetData( image, quantity);
     }
 
     public void Hide()

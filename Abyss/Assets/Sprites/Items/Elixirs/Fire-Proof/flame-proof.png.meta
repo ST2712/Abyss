@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 133ca32d6b944734baf845fcd7dbb2e4
+guid: 66c5fb9328c7ed84b9612c24944dd1c0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fionn_idle_front_0
+      name: flame-proof_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 22
-        height: 32
+        x: 7
+        y: 7
+        width: 16
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 376eb5e214ddaee4cb94c3a5a0e0b2dc
-      internalID: -1339569360
+      spriteID: 5ca4a1831108a204ea1a85182f4e216f
+      internalID: 1454592020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fionn_idle_front_1
+      name: flame-proof_1
       rect:
         serializedVersion: 2
         x: 37
-        y: 0
-        width: 22
-        height: 32
+        y: 7
+        width: 16
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be7fbcecea81af4cbd049c5f31e1bf4
-      internalID: 193271215
+      spriteID: 4b5bcbe221fec7245b62671108af192d
+      internalID: 1352868751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fionn_idle_front_2
+      name: flame-proof_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 0
-        width: 22
-        height: 32
+        x: 67
+        y: 7
+        width: 16
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a70b07f110fb440a387b7f0599b840
-      internalID: 866630543
+      spriteID: 55c08b3f1fd90c04e98f82f96a00d215
+      internalID: 502429568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fionn_idle_front_3
+      name: flame-proof_3
       rect:
         serializedVersion: 2
-        x: 101
-        y: 0
-        width: 22
-        height: 32
+        x: 97
+        y: 7
+        width: 16
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a01bdc784871f6949ba5c196a908486f
-      internalID: 1108576657
+      spriteID: ae02460a4fbf3644896a522176b85fba
+      internalID: -439484503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fionn_idle_front_4
+      name: flame-proof_4
       rect:
         serializedVersion: 2
-        x: 133
-        y: 0
-        width: 22
-        height: 32
+        x: 127
+        y: 7
+        width: 16
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60604b1dce1c6d84a8ea58f46e9c7f59
-      internalID: 275288598
+      spriteID: 5585a6331f7a19f4cb06a14715c603c7
+      internalID: 253765693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fionn_idle_front_5
+      name: flame-proof_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 0
-        width: 22
-        height: 32
+        x: 157
+        y: 7
+        width: 16
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b9be2ca962dfbc4db8100cdce5f21d6
-      internalID: -494536127
+      spriteID: afa66da58ed656943af2dbd1564d3489
+      internalID: -1629936744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame-proof_6
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 7
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32ed65f424b64f49ad8614c24fcdf33
+      internalID: 1742636760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flame-proof_7
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 7
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35033bdddcfbbd34ca9679025d67c0e9
+      internalID: 1425997011
       vertices: []
       indices: 
       edges: []
@@ -246,12 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fionn_idle_front_0: -1339569360
-      fionn_idle_front_1: 193271215
-      fionn_idle_front_2: 866630543
-      fionn_idle_front_3: 1108576657
-      fionn_idle_front_4: 275288598
-      fionn_idle_front_5: -494536127
+      flame-proof_0: 1454592020
+      flame-proof_1: 1352868751
+      flame-proof_2: 502429568
+      flame-proof_3: -439484503
+      flame-proof_4: 253765693
+      flame-proof_5: -1629936744
+      flame-proof_6: 1742636760
+      flame-proof_7: 1425997011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

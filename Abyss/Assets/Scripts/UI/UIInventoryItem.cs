@@ -16,6 +16,7 @@ public class UIInventoryItem : MonoBehaviour
     [SerializeField]
     private Image borderImage;
 
+
     public event Action<UIInventoryItem> OnItemClicked, 
         OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag,
         OnRightMouseBtnClick;
@@ -36,11 +37,11 @@ public class UIInventoryItem : MonoBehaviour
     {
         this.borderImage.enabled = false;
     }
-    public void SetData(Sprite sprite, int quantity)
+    public void SetData( Sprite sprite, int quantity)
     {
         this.itemImage.gameObject.SetActive(true);
         this.itemImage.sprite = sprite;
-        this.quantityTxt.text = quantity + "";
+        this.quantityTxt.text = quantity.ToString();
         this.empty = false;
     }
 
