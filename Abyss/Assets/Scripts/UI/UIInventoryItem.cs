@@ -17,6 +17,7 @@ public class UIInventoryItem : MonoBehaviour
     private Image borderImage;
 
 
+
     public event Action<UIInventoryItem> OnItemClicked, 
         OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag,
         OnRightMouseBtnClick;

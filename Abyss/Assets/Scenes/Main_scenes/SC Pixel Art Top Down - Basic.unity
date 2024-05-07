@@ -35179,6 +35179,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3148641027002024774, guid: 76cb9f445fd4cf84cbd0007c0fd382a7, type: 3}
+      propertyPath: overlay
+      value: 
+      objectReference: {fileID: 857760585}
+    - target: {fileID: 3148641027002024774, guid: 76cb9f445fd4cf84cbd0007c0fd382a7, type: 3}
       propertyPath: inventoryUI
       value: 
       objectReference: {fileID: 1282762352675445405}
@@ -36235,15 +36239,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4075770232777413232, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4075770232777413232, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4075770232777413232, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4075770232777413232, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchoredPosition.x

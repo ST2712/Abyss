@@ -12,6 +12,8 @@ public class UIInventoryPage : MonoBehaviour
     
     [SerializeField] private UIInventoryDescription itemDescription;
 
+    [SerializeField] private MouseFollower mouseFollower;
+
     List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
 
     //Temp Variables
@@ -22,7 +24,9 @@ public class UIInventoryPage : MonoBehaviour
 
     private void Awake(){
         Hide();
+        mouseFollower.Toogle(false);
         itemDescription.ResetDescription();
+        
     }
 
     public void InitializeInventoryUI(int inventorysize)
@@ -49,7 +53,7 @@ public class UIInventoryPage : MonoBehaviour
 
     private void HandleEndDrag(UIInventoryItem obj)
     {
-
+        mouseFollower.Toogle(false);
     }
 
     private void HandleSwap(UIInventoryItem obj)
@@ -59,7 +63,8 @@ public class UIInventoryPage : MonoBehaviour
 
     private void HandleBeginDrag(UIInventoryItem obj)
     {
-
+        mouseFollower.Toogle(true);
+        mouseFollower.SetData(image, quantity);
     }
 
     private void HandleItemSelection(UIInventoryItem obj)
