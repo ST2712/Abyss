@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Enemy : MonoBehaviour
     public GameObject coin;
     public GameObject soundController;
     private GameObject player;
+    NavMeshAgent navMeshAgent;
     private int attackDamage;
     private bool canAttack = true;
     void Start()
@@ -25,6 +27,7 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
+        navMeshAgent = GetComponent<NavMeshAgent>();
         //attackDamage = 1;
     }
 
@@ -34,7 +37,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             audioSource.Play();
-            //FollowObjective.navMeshAgent.speed = 0;
+            //GetComponent<FollowObjective>().enabled = false;
             die();
             this.enabled = false;
             GetComponent<Collider2D>().enabled = false;
@@ -62,6 +65,9 @@ public class Enemy : MonoBehaviour
     {
         canAttack = false;
         animator.SetTrigger("Attack");
+
+        float axuiliar = navMeshAgent.speed;
+        //navMeshAgent.speed = 0;
         yield return new WaitForSeconds(0.5f); // Tiempo de la animación de ataque, ajusta según tu animación
         if (Vector2.Distance(transform.position, player.transform.position) <= attackRange)
         {
@@ -69,6 +75,7 @@ public class Enemy : MonoBehaviour
             Collider2D[] objects = Physics2D.OverlapCircleAll(normalAttackRightController.position, attackRange);
         }
         yield return new WaitForSeconds(attackCooldown);
+        navMeshAgent.speed = axuiliar;
         canAttack = true;
     }
 
