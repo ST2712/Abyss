@@ -36279,6 +36279,10 @@ PrefabInstance:
       value: VIda Extra
       objectReference: {fileID: 0}
     - target: {fileID: 1208514691080429595, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: 1454592020, guid: 66c5fb9328c7ed84b9612c24944dd1c0, type: 3}
+    - target: {fileID: 1208514691080429595, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: description
       value: Otorga Un corazon extra a quien la bebe
       objectReference: {fileID: 0}
@@ -36620,19 +36624,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 50.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.25
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
