@@ -54,7 +54,7 @@ namespace Inventory
         {
             inventoryUI.InitializeInventoryUI(inventoryData.Size);
             inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
-            inventoryUI.onSwapItem += HandleSwapItems;
+            inventoryUI.OnSwapItems += HandleSwapItems;
             inventoryUI.OnStartDragging += HandleDragging;
             inventoryUI.OnItemActionRequested += HandleItemActionRequested;
         }

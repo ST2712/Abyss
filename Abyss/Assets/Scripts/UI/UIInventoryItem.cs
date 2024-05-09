@@ -8,7 +8,8 @@ using UnityEngine.EventSystems;
 
 namespace Inventory.UI
 {
-    public class UIInventoryItem : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler
+    public class UIInventoryItem : MonoBehaviour, IPointerClickHandler,
+        IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler
     {
         [SerializeField]
         private Image itemImage;
@@ -17,8 +18,6 @@ namespace Inventory.UI
 
         [SerializeField]
         private Image borderImage;
-
-
 
         public event Action<UIInventoryItem> OnItemClicked,
             OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag,
@@ -44,7 +43,7 @@ namespace Inventory.UI
         {
             itemImage.gameObject.SetActive(true);
             itemImage.sprite = sprite;
-            quantityTxt.text = quantity.ToString();
+            quantityTxt.text = quantity + "";
             empty = false;
         }
 
@@ -53,11 +52,8 @@ namespace Inventory.UI
             borderImage.enabled = true;
         }
 
-
         public void OnPointerClick(PointerEventData pointerData)
         {
-            Debug.Log($"Clicked {gameObject.name}");
-
             if (pointerData.button == PointerEventData.InputButton.Right)
             {
                 OnRightMouseBtnClick?.Invoke(this);
@@ -68,16 +64,16 @@ namespace Inventory.UI
             }
         }
 
+        public void OnEndDrag(PointerEventData eventData)
+        {
+            OnItemEndDrag?.Invoke(this);
+        }
+
         public void OnBeginDrag(PointerEventData eventData)
         {
             if (empty)
                 return;
             OnItemBeginDrag?.Invoke(this);
-        }
-
-        public void OnEndDrag(PointerEventData eventData)
-        {
-            OnItemEndDrag?.Invoke(this);
         }
 
         public void OnDrop(PointerEventData eventData)

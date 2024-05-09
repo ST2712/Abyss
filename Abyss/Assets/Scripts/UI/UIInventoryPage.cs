@@ -1,36 +1,39 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Inventory.UI
 {
     public class UIInventoryPage : MonoBehaviour
     {
-        [SerializeField] private UIInventoryItem itemPrefab;
+        [SerializeField]
+        private UIInventoryItem itemPrefab;
 
-        [SerializeField] private RectTransform contentPanel;
+        [SerializeField]
+        private RectTransform contentPanel;
 
-        [SerializeField] private UIInventoryDescription itemDescription;
+        [SerializeField]
+        private UIInventoryDescription itemDescription;
 
-        [SerializeField] private MouseFollower mouseFollower;
+        [SerializeField]
+        private MouseFollower mouseFollower;
 
         List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
 
         private int currentlyDraggedItemIndex = -1;
 
-        public event Action<int> OnDescriptionRequested, OnItemActionRequested, OnStartDragging;
+        public event Action<int> OnDescriptionRequested,
+                OnItemActionRequested,
+                OnStartDragging;
 
-        public event Action<int, int> onSwapItem;
-
+        public event Action<int, int> OnSwapItems;
 
         private void Awake()
         {
             Hide();
-            mouseFollower.Toogle(false);
+            mouseFollower.Toggle(false);
             itemDescription.ResetDescription();
-
         }
 
         public void InitializeInventoryUI(int inventorysize)
@@ -42,7 +45,6 @@ namespace Inventory.UI
                 uiItem.transform.SetParent(contentPanel, false);
                 listOfUIItems.Add(uiItem);
                 uiItem.OnItemClicked += HandleItemSelection;
-                Debug.Log(uiItem);
                 uiItem.OnItemBeginDrag += HandleBeginDrag;
                 uiItem.OnItemDroppedOn += HandleSwap;
                 uiItem.OnItemEndDrag += HandleEndDrag;
@@ -50,7 +52,24 @@ namespace Inventory.UI
             }
         }
 
-        public void UpdateData(int itemIndex, Sprite itemImage, int itemQuantity)
+        internal void ResetAllItems()
+        {
+            foreach (var item in listOfUIItems)
+            {
+                item.ResetData();
+                item.Deselect();
+            }
+        }
+
+        internal void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
+        {
+            itemDescription.SetDescription(itemImage, name, description);
+            DeselectAllItems();
+            listOfUIItems[itemIndex].Select();
+        }
+
+        public void UpdateData(int itemIndex,
+            Sprite itemImage, int itemQuantity)
         {
             if (listOfUIItems.Count > itemIndex)
             {
@@ -75,13 +94,13 @@ namespace Inventory.UI
             {
                 return;
             }
-            onSwapItem?.Invoke(currentlyDraggedItemIndex, index);
+            OnSwapItems?.Invoke(currentlyDraggedItemIndex, index);
             HandleItemSelection(inventoryItemUI);
         }
 
         private void ResetDraggedItem()
         {
-            mouseFollower.Toogle(false);
+            mouseFollower.Toggle(false);
             currentlyDraggedItemIndex = -1;
         }
 
@@ -93,12 +112,11 @@ namespace Inventory.UI
             currentlyDraggedItemIndex = index;
             HandleItemSelection(inventoryItemUI);
             OnStartDragging?.Invoke(index);
-
         }
 
         public void CreateDraggedItem(Sprite sprite, int quantity)
         {
-            mouseFollower.Toogle(true);
+            mouseFollower.Toggle(true);
             mouseFollower.SetData(sprite, quantity);
         }
 
@@ -108,7 +126,6 @@ namespace Inventory.UI
             if (index == -1)
                 return;
             OnDescriptionRequested?.Invoke(index);
-
         }
 
         public void Show()
@@ -133,25 +150,8 @@ namespace Inventory.UI
 
         public void Hide()
         {
-            ResetDraggedItem();
-            ResetDraggedItem();
             gameObject.SetActive(false);
-        }
-
-        internal void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
-        {
-            itemDescription.setDescription(itemImage, name, description);
-            DeselectAllItems();
-            listOfUIItems[itemIndex].Select();
-        }
-
-        internal void ResetAllItems()
-        {
-           foreach (var item in listOfUIItems)
-           {
-                item.ResetData();
-                item.Deselect();
-           }
+            ResetDraggedItem();
         }
     }
 }

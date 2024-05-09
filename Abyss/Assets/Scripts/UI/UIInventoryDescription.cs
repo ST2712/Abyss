@@ -10,12 +10,11 @@ namespace Inventory.UI
     {
         [SerializeField]
         private Image itemImage;
-
         [SerializeField]
         private TMP_Text title;
-
         [SerializeField]
         private TMP_Text description;
+
 
         public void Awake()
         {
@@ -29,7 +28,8 @@ namespace Inventory.UI
             description.text = "";
         }
 
-        public void setDescription(Sprite sprite, string itemName, string itemDescription)
+        public void SetDescription(Sprite sprite, string itemName,
+            string itemDescription)
         {
             itemImage.gameObject.SetActive(true);
             itemImage.sprite = sprite;

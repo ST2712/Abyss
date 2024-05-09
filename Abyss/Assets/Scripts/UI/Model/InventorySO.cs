@@ -2,17 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Lumin;
 
 namespace Inventory.Model
 {
     [CreateAssetMenu]
     public class InventorySO : ScriptableObject
     {
-        [SerializeField] private List<InventoryItem> inventoryItems;
-        [field: SerializeField] public int Size { get; private set; } = 12;
+        [SerializeField]
+        private List<InventoryItem> inventoryItems;
+
+        [field: SerializeField]
+        public int Size { get; private set; } = 10;
 
         public event Action<Dictionary<int, InventoryItem>> OnInventoryUpdated;
 
@@ -24,30 +25,31 @@ namespace Inventory.Model
                 inventoryItems.Add(InventoryItem.GetEmptyItem());
             }
         }
-        public int addItems(ItemSO item, int quantity)
+
+        public int AddItems(ItemSO item, int quantity)
         {
             if(item.IsStackable == false)
             {
-               for (int i = 0; i < inventoryItems.Count; i++)
+                for (int i = 0; i < inventoryItems.Count; i++)
                 {
                     while(quantity > 0 && IsInventoryFull() == false)
-                    {   
-                        quantity -= AddNonStackableItem(item, 1);;
+                    {
+                        quantity -= AddItemToFirstFreeSlot(item, 1);
                     }
                     InformAboutChange();
                     return quantity;
-                }  
+                }
             }
             quantity = AddStackableItem(item, quantity);
             InformAboutChange();
             return quantity;
         }
 
-        private int AddNonStackableItem(ItemSO item, int quantity)
+        private int AddItemToFirstFreeSlot(ItemSO item, int quantity)
         {
-            InventoryItem newItem =new InventoryItem
+            InventoryItem newItem = new InventoryItem
             {
-                item=item,
+                item = item,
                 quantity = quantity
             };
 
@@ -69,20 +71,23 @@ namespace Inventory.Model
         {
             for (int i = 0; i < inventoryItems.Count; i++)
             {
-                if(inventoryItems[i].IsEmpty)
+                if (inventoryItems[i].IsEmpty)
                     continue;
                 if(inventoryItems[i].item.ID == item.ID)
                 {
-                    int amountPossibleToTake = inventoryItems[i].item.MaxStackSize - inventoryItems[i].quantity;
+                    int amountPossibleToTake =
+                        inventoryItems[i].item.MaxStackSize - inventoryItems[i].quantity;
 
                     if (quantity > amountPossibleToTake)
                     {
-                        inventoryItems[i]= inventoryItems[i].ChangeQuantity(inventoryItems[i].item.MaxStackSize);
-                        quantity -= amountPossibleToTake; 
+                        inventoryItems[i] = inventoryItems[i]
+                            .ChangeQuantity(inventoryItems[i].item.MaxStackSize);
+                        quantity -= amountPossibleToTake;
                     }
                     else
                     {
-                        inventoryItems[i] = inventoryItems[i].ChangeQuantity(inventoryItems[i].quantity + quantity);
+                        inventoryItems[i] = inventoryItems[i]
+                            .ChangeQuantity(inventoryItems[i].quantity + quantity);
                         InformAboutChange();
                         return 0;
                     }
@@ -97,27 +102,16 @@ namespace Inventory.Model
             return quantity;
         }
 
-        private int AddItemToFirstFreeSlot(ItemSO item, int quantity)
+        public void AddItem(InventoryItem item)
         {
-            InventoryItem newItem = new InventoryItem
-            {
-                item = item,
-                quantity = quantity
-            };
-            for(int i = 0; i < inventoryItems.Count; i++)
-            {
-                if (inventoryItems[i].IsEmpty)
-                {
-                    inventoryItems[i] = newItem;
-                    return quantity;
-                }
-            }
-            return 0;
+            AddItems(item.item, item.quantity);
         }
 
         public Dictionary<int, InventoryItem> GetCurrentInventoryState()
         {
-            Dictionary<int, InventoryItem> returnValue = new Dictionary<int, InventoryItem>();
+            Dictionary<int, InventoryItem> returnValue =
+                new Dictionary<int, InventoryItem>();
+
             for (int i = 0; i < inventoryItems.Count; i++)
             {
                 if (inventoryItems[i].IsEmpty)
@@ -132,22 +126,17 @@ namespace Inventory.Model
             return inventoryItems[itemIndex];
         }
 
-        public void AddItem(InventoryItem item)
+        public void SwapItems(int itemIndex_1, int itemIndex_2)
         {
-            addItems(item.item, item.quantity);
-        }
-
-        public void SwapItems(int itemIndex1, int itemIndex2)
-        {
-            InventoryItem item1 = inventoryItems[itemIndex1];
-            inventoryItems[itemIndex1] = inventoryItems[itemIndex2];
-            inventoryItems[itemIndex2] = item1;
+            InventoryItem item1 = inventoryItems[itemIndex_1];
+            inventoryItems[itemIndex_1] = inventoryItems[itemIndex_2];
+            inventoryItems[itemIndex_2] = item1;
             InformAboutChange();
         }
 
         private void InformAboutChange()
         {
-            OnInventoryUpdated?.Invoke(GetCurrentInventoryState());    
+            OnInventoryUpdated?.Invoke(GetCurrentInventoryState());
         }
     }
 
@@ -167,10 +156,11 @@ namespace Inventory.Model
             };
         }
 
-        public static InventoryItem GetEmptyItem() => new InventoryItem
-        {
-            item = null,
-            quantity = 0,
-        };
+        public static InventoryItem GetEmptyItem()
+            => new InventoryItem
+            {
+                item = null,
+                quantity = 0,
+            };
     }
 }
