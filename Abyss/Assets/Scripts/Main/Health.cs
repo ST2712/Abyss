@@ -36,7 +36,8 @@ public class Health : MonoBehaviour
     void Update()
     {
 
-        if(health <= 0){
+        if (health <= 0)
+        {
             player.GetComponent<Transform>().position = diePoint;
         }
 
@@ -100,7 +101,7 @@ public class Health : MonoBehaviour
             {
                 animator.SetBool("isDead", true);
                 animator.SetTrigger("Dead");
-                player.GetComponent<CombatScript>().punchDamage = 0;
+                player.GetComponent<CombatScript>().enabled = false;
                 GetComponent<Collider2D>().enabled = false;
                 diePoint = player.transform.position;
                 Destroy(gameObject, 4);
@@ -109,27 +110,6 @@ public class Health : MonoBehaviour
             StartCoroutine(NoControl());
             StartCoroutine(NoCollision());
             topDownMovement.bounce(hitPoint);
-        }
-    }
-
-        public void takeDamage(int damage)
-    {
-        if (extraHealth)
-        {
-            extraHealth = false;
-            return;
-        }
-        else
-        {
-            health -= damage;
-            if (health <= 0)
-            {
-                animator.SetTrigger("Dead");
-                GetComponent<Collider2D>().enabled = false;
-                diePoint = player.transform.position;
-                Destroy(gameObject, 4);
-            }
-            //animator.SetTrigger("Hurt");
         }
     }
 
@@ -142,7 +122,7 @@ public class Health : MonoBehaviour
         player.GetComponent<CombatScript>().punchDamage = 20;
     }
 
-        private IEnumerator NoCollision()
+    private IEnumerator NoCollision()
     {
         Physics2D.IgnoreLayerCollision(6, 7, true);
         yield return new WaitForSeconds(noControlTime);
