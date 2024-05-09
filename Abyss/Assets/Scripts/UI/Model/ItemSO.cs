@@ -6,6 +6,9 @@ using Unity.Burst.CompilerServices;
 using UnityEditor.Rendering;
 using UnityEngine;
 
+namespace Inventory.Model
+{
+
 [CreateAssetMenu]
 public class ItemSO : ScriptableObject
 {
@@ -30,5 +33,7 @@ public class ItemSO : ScriptableObject
 
     [field: SerializeField]
     public Animator ItemAnimator{get;set;}
+
+}
 
 }

@@ -35408,6 +35408,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1282762352675445405}
     - target: {fileID: 3148641027002024774, guid: 76cb9f445fd4cf84cbd0007c0fd382a7, type: 3}
+      propertyPath: inventoryData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f1a5cf6359b55748b0bfd02e907d9ea, type: 2}
+    - target: {fileID: 3148641027002024774, guid: 76cb9f445fd4cf84cbd0007c0fd382a7, type: 3}
       propertyPath: inventorySize
       value: 6
       objectReference: {fileID: 0}

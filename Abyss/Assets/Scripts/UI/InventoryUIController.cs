@@ -1,32 +1,113 @@
+using Inventory.UI;
+using Inventory.Model;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryController : MonoBehaviour
+namespace Inventory
 {
-    [SerializeField]
-    private UIInventoryPage inventoryUI;
+    public class InventoryController : MonoBehaviour
+    {
+        [SerializeField] private UIInventoryPage inventoryUI;
 
-    [SerializeField]
-    private Image overlay;
+        [SerializeField] private InventorySO inventoryData;
 
-    public int inventorySize = 12;
+        [SerializeField] private Image overlay;
 
-    private void Start(){
-        inventoryUI.InitializeInventoryUI(inventorySize);
-        overlay.gameObject.SetActive(false);
-    }
+        public List<InventoryItem> initialItems = new List<InventoryItem>();
 
-    public void Update(){
-        if(Input.GetKeyDown(KeyCode.I)){
-            if(inventoryUI.isActiveAndEnabled == false){
-                inventoryUI.Show();
-                overlay.gameObject.SetActive(true);
-            }else{
-            inventoryUI.Hide();   
+        private void Start()
+        {
+            PrepareUI();
             overlay.gameObject.SetActive(false);
+            PrepareInventoryData();
+
+        }
+
+        private void PrepareInventoryData()
+        {
+            inventoryData.Initialize();
+            inventoryData.OnInventoryUpdated += UpdateInventoryUI;
+            foreach (InventoryItem item in initialItems)
+            {
+                if (item.IsEmpty)
+                    continue;
+                inventoryData.AddItem(item);
+
+            }
+        }
+
+        private void UpdateInventoryUI(Dictionary<int, InventoryItem> inventoryState)
+        {
+            inventoryUI.ResetAllItems();
+            foreach (var item in inventoryState)
+            {
+                inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage, item.Value.quantity);
+            }
+        }
+
+        private void PrepareUI()
+        {
+            inventoryUI.InitializeInventoryUI(inventoryData.Size);
+            inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
+            inventoryUI.onSwapItem += HandleSwapItems;
+            inventoryUI.OnStartDragging += HandleDragging;
+            inventoryUI.OnItemActionRequested += HandleItemActionRequested;
+        }
+
+        private void HandleItemActionRequested(int itemIndex)
+        {
+
+        }
+
+        private void HandleDragging(int itemIndex)
+        {
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+                return;
+            inventoryUI.CreateDraggedItem(inventoryItem.item.ItemImage, inventoryItem.quantity);
+        }
+        private void HandleSwapItems(int itemIndex1, int itemIndex2)
+        {
+            inventoryData.SwapItems(itemIndex1, itemIndex2);
+        }
+
+        private void HandleDescriptionRequest(int itemIndex)
+        {
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+            {
+                inventoryUI.ResetSelection();
+                return;
+            }
+
+            ItemSO item = inventoryItem.item;
+            inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, item.Description);
+        }
+
+
+        public void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                if (inventoryUI.isActiveAndEnabled == false)
+                {
+                    inventoryUI.Show();
+                    overlay.gameObject.SetActive(true);
+                    foreach (var item in inventoryData.GetCurrentInventoryState())
+                    {
+                        inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage, item.Value.quantity);
+                    }
+                }
+                else
+                {
+                    inventoryUI.Hide();
+                    overlay.gameObject.SetActive(false);
+                }
             }
         }
     }

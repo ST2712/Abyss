@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 41, y: 41}
+  m_SizeDelta: {x: 39, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6070520946123189752
 CanvasRenderer:
@@ -659,10 +659,7 @@ MonoBehaviour:
   itemPrefab: {fileID: 7187801317257496960, guid: 82e086f3da12e4b4a85ac3e198d2aa02, type: 3}
   contentPanel: {fileID: 4236033177808774866}
   itemDescription: {fileID: 4745824887217308708}
-  image: {fileID: 1454592020, guid: 66c5fb9328c7ed84b9612c24944dd1c0, type: 3}
-  quantity: 1
-  title: Elixir Ignifugo
-  description: Otorga a quien lo bebe inmunidad al fuego
+  mouseFollower: {fileID: 0}
 --- !u!1 &1795531542982024284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,8 +1027,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281747848
-  m_fontColor: {r: 0.53333336, g: 0.28627452, b: 0.21176472, a: 1}
+    rgba: 4279639106
+  m_fontColor: {r: 0.25882354, g: 0.10980393, b: 0.08627451, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1048,13 +1045,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 6
+  m_fontSizeBase: 6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1244,15 +1241,15 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7959639437251666377}
   m_Father: {fileID: 604576125070978484}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 101, y: 84.5}
+  m_AnchorMin: {x: 0.505, y: 0.35867622}
+  m_AnchorMax: {x: 0.505, y: 0.35867622}
+  m_AnchoredPosition: {x: 0.00000011920929, y: 9}
+  m_SizeDelta: {x: 94, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8263502779555574547
 CanvasRenderer:
@@ -1535,8 +1532,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
