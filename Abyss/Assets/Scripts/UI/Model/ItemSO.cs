@@ -16,7 +16,7 @@ public class ItemSO : ScriptableObject
     [field: SerializeField]
     public bool IsStackable {get; set;}
     
-    public int ID => GetInstanceID ();
+    public int ID => GetInstanceID();
 
     [field: SerializeField]
     public int MaxStackSize  {get; set;} = 1;
