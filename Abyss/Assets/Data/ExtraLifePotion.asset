@@ -18,6 +18,8 @@ MonoBehaviour:
   <Description>k__BackingField: Podras recibir un golpe adicipnal antes de perderte
     en tu viaje
   <ItemImage>k__BackingField: {fileID: 1734796171, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
+  <DefaultParametersList>k__BackingField: []
   modifiersData:
   - statModifier: {fileID: 11400000, guid: 89d17d4cc3cd44043bebc19aaf6916dc, type: 2}
     value: 0
+  <actionSFX>k__BackingField: {fileID: 8300000, guid: 3f88ebbc91e02054cb5539a2f23045a5, type: 3}
