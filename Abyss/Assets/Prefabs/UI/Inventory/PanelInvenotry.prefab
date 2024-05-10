@@ -33,9 +33,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8566760969344999003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 47, y: -21}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 39, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6070520946123189752
@@ -660,6 +660,7 @@ MonoBehaviour:
   contentPanel: {fileID: 4236033177808774866}
   itemDescription: {fileID: 4745824887217308708}
   mouseFollower: {fileID: 0}
+  actionPanel: {fileID: 0}
 --- !u!1 &1795531542982024284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,7 +1019,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Descripcci\xF3n"
+  m_text: 12
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b24190aa2556c748b92780d7638466b, type: 2}
   m_sharedMaterial: {fileID: -1786763492576440856, guid: 4b24190aa2556c748b92780d7638466b, type: 2}
@@ -1027,8 +1028,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279639106
-  m_fontColor: {r: 0.25882354, g: 0.10980393, b: 0.08627451, a: 1}
+    rgba: 4281218927
+  m_fontColor: {r: 0.4339623, g: 0.21651591, b: 0.18218228, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1045,8 +1046,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 6
-  m_fontSizeBase: 6
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1475,7 +1476,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 112.87, y: 15.53}
+  m_SizeDelta: {x: 91.08, y: 28.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1022404572155760026
 CanvasRenderer:
@@ -1505,7 +1506,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Titulo
+  m_text: 'Titulo
+
+    Largo'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b24190aa2556c748b92780d7638466b, type: 2}
   m_sharedMaterial: {fileID: -1786763492576440856, guid: 4b24190aa2556c748b92780d7638466b, type: 2}
@@ -1532,8 +1535,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

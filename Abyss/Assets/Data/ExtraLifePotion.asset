@@ -16,7 +16,7 @@ MonoBehaviour:
   <MaxStackSize>k__BackingField: 1
   <Name>k__BackingField: "Poci\xF3n Vigorizante"
   <Description>k__BackingField: Podras recibir un golpe adicipnal antes de perderte
-    en tu viaje
+    en tu viaje.
   <ItemImage>k__BackingField: {fileID: 1734796171, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
   <DefaultParametersList>k__BackingField: []
   modifiersData:

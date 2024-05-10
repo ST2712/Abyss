@@ -23,7 +23,7 @@ namespace Inventory
 
         [SerializeField] private AudioSource audioSource;
 
-        [SerializeField] private AudioClip dropclip;
+        [SerializeField] private AudioClip dropClip;
 
         private void Start()
         {
@@ -88,9 +88,11 @@ namespace Inventory
 
         private void DropItem(int itemIndex, int quantity)
         {
+            
             inventoryData.RemoveItem(itemIndex, quantity);
             inventoryUI.ResetSelection();
-            audioSource.PlayOneShot(dropclip);
+            audioSource.PlayOneShot(dropClip);
+            
         }
 
         public void PerformAction(int itemIndex)
@@ -148,9 +150,10 @@ namespace Inventory
             {
                 sb.Append($"{inventoryItem.itemState[i].itemParameter.ParameterName}" +
                         $": {inventoryItem.itemState[i].value} / {inventoryItem.item.DefaultParametersList[i].value}");
+                sb.AppendLine();
+                sb.AppendLine();
             }
-            sb.AppendLine();
-            sb.AppendLine();
+            
             sb.Append(inventoryItem.item.Description);
             
             return sb.ToString();
