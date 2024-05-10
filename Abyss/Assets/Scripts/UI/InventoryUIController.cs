@@ -87,14 +87,20 @@ namespace Inventory
         }
 
         private void DropItem(int itemIndex, int quantity)
-        {
-            
-            inventoryData.RemoveItem(itemIndex, quantity);
-            inventoryUI.ResetSelection();
-            audioSource.PlayOneShot(dropClip);
-            
-        }
+{
+    inventoryData.RemoveItem(itemIndex, quantity);
+    inventoryUI.ResetSelection();
 
+    if (audioSource!= null && dropClip!= null)
+    {
+        audioSource.PlayOneShot(dropClip);
+        Debug.Log(""+audioSource.name + dropClip.name);
+    }
+    else
+    {
+        Debug.LogError("AudioSource or dropClip is null!");
+    }
+}
         public void PerformAction(int itemIndex)
         {
             InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);

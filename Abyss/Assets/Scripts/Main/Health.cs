@@ -14,7 +14,9 @@ public class Health : MonoBehaviour
     public Sprite emptyHeart;
     public Sprite extraHeart;
 
-    private AudioSource heartBite;
+    [SerializeField]private AudioSource audioSource;
+
+    [SerializeField] private AudioClip heartBeat;
 
     private TopDownMovement topDownMovement;
     [SerializeField] private float noControlTime;
@@ -24,7 +26,7 @@ public class Health : MonoBehaviour
 
     void Start()
     {
-        heartBite = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
         topDownMovement = GetComponent<TopDownMovement>();
         animator = GetComponent<Animator>();
         animator.SetBool("isDead", false);
@@ -68,15 +70,15 @@ public class Health : MonoBehaviour
 
         if (health == 1)
         {
-            if (!heartBite.isPlaying)
+            if (!audioSource.isPlaying)
             {
-                heartBite.Play();
+                audioSource.PlayOneShot(heartBeat);
                 StartCoroutine(PauseSoundAndResume());
             }
         }
         else
         {
-            heartBite.Stop();
+            audioSource.Stop();
         }
 
     }
@@ -133,10 +135,10 @@ public class Health : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
 
-        if (heartBite.isPlaying)
+        if (audioSource.isPlaying)
         {
-            heartBite.Stop();
-            heartBite.PlayDelayed(1f);
+            audioSource.Stop();
+            audioSource.PlayDelayed(1f);
         }
     }
 }
