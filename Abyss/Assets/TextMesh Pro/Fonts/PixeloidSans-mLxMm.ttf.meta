@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 36540dc96d2ecd34e828fefbc33dc55e
+guid: 2477571a4ce7d174db8bfe19b630d08d
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Pixellari
+  - Pixeloid Sans
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
