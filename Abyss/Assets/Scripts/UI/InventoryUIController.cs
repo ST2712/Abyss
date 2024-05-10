@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Text;
 
 namespace Inventory
 {
@@ -64,16 +65,19 @@ namespace Inventory
             InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
             if (inventoryItem.IsEmpty)
                 return;
-            IItemAction itemAction = inventoryItem.item as IItemAction;
-            if (itemAction != null)
-            {
-                itemAction.PerformAction(gameObject);
-            }
             IDestroyableItem destroyableItem =  inventoryItem.item as IDestroyableItem;
+            
             if (destroyableItem != null)
             {
                 inventoryData.RemoveItem(itemIndex, 1);
             }
+            
+            IItemAction itemAction = inventoryItem.item as IItemAction;
+            if (itemAction != null)
+            {
+                itemAction.PerformAction(gameObject, inventoryItem.itemState);
+            }
+            
         }
 
         private void HandleDragging(int itemIndex)
@@ -98,7 +102,24 @@ namespace Inventory
             }
 
             ItemSO item = inventoryItem.item;
-            inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, item.Description);
+            string description = PrepareDescription(inventoryItem);
+            inventoryUI.UpdateDescription(itemIndex, item.ItemImage, item.Name, description);
+        }
+
+        private string PrepareDescription(InventoryItem inventoryItem)
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < inventoryItem.itemState.Count; i++)
+            {
+                sb.Append($"{inventoryItem.itemState[i].itemParameter.ParameterName}" +
+                        $": {inventoryItem.itemState[i].value} / {inventoryItem.item.DefaultParametersList[i].value}");
+            }
+            sb.AppendLine();
+            sb.AppendLine();
+            sb.Append(inventoryItem.item.Description);
+            
+            return sb.ToString();
+            
         }
 
 
