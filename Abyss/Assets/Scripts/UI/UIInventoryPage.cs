@@ -7,25 +7,19 @@ namespace Inventory.UI
 {
     public class UIInventoryPage : MonoBehaviour
     {
-        [SerializeField]
-        private UIInventoryItem itemPrefab;
+        [SerializeField] private UIInventoryItem itemPrefab;
 
-        [SerializeField]
-        private RectTransform contentPanel;
+        [SerializeField] private RectTransform contentPanel;
 
-        [SerializeField]
-        private UIInventoryDescription itemDescription;
+        [SerializeField] private UIInventoryDescription itemDescription;
 
-        [SerializeField]
-        private MouseFollower mouseFollower;
+        [SerializeField] private MouseFollower mouseFollower;
 
         List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
 
         private int currentlyDraggedItemIndex = -1;
 
-        public event Action<int> OnDescriptionRequested,
-                OnItemActionRequested,
-                OnStartDragging;
+        public event Action<int> OnDescriptionRequested, OnItemActionRequested, OnStartDragging;
 
         public event Action<int, int> OnSwapItems;
 
@@ -48,7 +42,7 @@ namespace Inventory.UI
                 uiItem.OnItemBeginDrag += HandleBeginDrag;
                 uiItem.OnItemDroppedOn += HandleSwap;
                 uiItem.OnItemEndDrag += HandleEndDrag;
-                uiItem.OnRightMouseBtnClick += HandleShowItemActions;
+                uiItem.OnRightClick += HandleShowItemActions;
             }
         }
 
@@ -68,8 +62,7 @@ namespace Inventory.UI
             listOfUIItems[itemIndex].Select();
         }
 
-        public void UpdateData(int itemIndex,
-            Sprite itemImage, int itemQuantity)
+        public void UpdateData(int itemIndex, Sprite itemImage, int itemQuantity)
         {
             if (listOfUIItems.Count > itemIndex)
             {
@@ -79,7 +72,12 @@ namespace Inventory.UI
 
         private void HandleShowItemActions(UIInventoryItem inventoryItemUI)
         {
-
+            int index = listOfUIItems.IndexOf(inventoryItemUI);
+            if (index == -1)
+            {
+                return;
+            }
+            OnItemActionRequested?.Invoke(index);
         }
 
         private void HandleEndDrag(UIInventoryItem inventoryItemUI)

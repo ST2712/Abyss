@@ -9,11 +9,9 @@ namespace Inventory.Model
     [CreateAssetMenu]
     public class InventorySO : ScriptableObject
     {
-        [SerializeField]
-        private List<InventoryItem> inventoryItems;
+        [SerializeField] private List<InventoryItem> inventoryItems;
 
-        [field: SerializeField]
-        public int Size { get; private set; } = 10;
+        [field: SerializeField] public int Size { get; private set; } = 10;
 
         public event Action<Dictionary<int, InventoryItem>> OnInventoryUpdated;
 
@@ -109,8 +107,7 @@ namespace Inventory.Model
 
         public Dictionary<int, InventoryItem> GetCurrentInventoryState()
         {
-            Dictionary<int, InventoryItem> returnValue =
-                new Dictionary<int, InventoryItem>();
+            Dictionary<int, InventoryItem> returnValue = new Dictionary<int, InventoryItem>();
 
             for (int i = 0; i < inventoryItems.Count; i++)
             {
@@ -138,6 +135,22 @@ namespace Inventory.Model
         {
             OnInventoryUpdated?.Invoke(GetCurrentInventoryState());
         }
+
+        public void RemoveItem(int itemIndex, int amount)
+        {
+            if(inventoryItems.Count > itemIndex)
+            {
+                if(inventoryItems[itemIndex].IsEmpty)
+                    return;
+                int reminder = inventoryItems[itemIndex].quantity - amount;
+                if(reminder <= 0)
+                    inventoryItems[itemIndex] = InventoryItem.GetEmptyItem();
+                else
+                    inventoryItems[itemIndex] = inventoryItems[itemIndex].ChangeQuantity(reminder);
+                InformAboutChange();
+            }
+        }
+
     }
 
     [Serializable]

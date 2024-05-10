@@ -11,17 +11,11 @@ namespace Inventory.UI
     public class UIInventoryItem : MonoBehaviour, IPointerClickHandler,
         IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler
     {
-        [SerializeField]
-        private Image itemImage;
-        [SerializeField]
-        private TMP_Text quantityTxt;
+        [SerializeField] private Image itemImage;
+        [SerializeField] private TMP_Text quantityTxt;
+        [SerializeField] private Image borderImage;
 
-        [SerializeField]
-        private Image borderImage;
-
-        public event Action<UIInventoryItem> OnItemClicked,
-            OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag,
-            OnRightMouseBtnClick;
+        public event Action<UIInventoryItem> OnItemClicked, OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag, OnRightClick;
 
         private bool empty = true;
 
@@ -43,7 +37,7 @@ namespace Inventory.UI
         {
             itemImage.gameObject.SetActive(true);
             itemImage.sprite = sprite;
-            quantityTxt.text = quantity + "";
+            quantityTxt.text = quantity.ToString();
             empty = false;
         }
 
@@ -56,7 +50,7 @@ namespace Inventory.UI
         {
             if (pointerData.button == PointerEventData.InputButton.Right)
             {
-                OnRightMouseBtnClick?.Invoke(this);
+                OnRightClick?.Invoke(this);
             }
             else
             {
