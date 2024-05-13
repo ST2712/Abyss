@@ -35984,6 +35984,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4879398300378045968, guid: 76cb9f445fd4cf84cbd0007c0fd382a7, type: 3}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879398300378045968, guid: 76cb9f445fd4cf84cbd0007c0fd382a7, type: 3}
       propertyPath: heartBeat
       value: 
       objectReference: {fileID: 8300000, guid: 7dc9f96f8c63acf459bb05445d982fcf, type: 3}
@@ -35999,6 +36003,10 @@ PrefabInstance:
       propertyPath: extraHealth
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4879398300378045968, guid: 76cb9f445fd4cf84cbd0007c0fd382a7, type: 3}
+      propertyPath: healthAudioSource
+      value: 
+      objectReference: {fileID: 1098834684}
     - target: {fileID: 4879398300378045968, guid: 76cb9f445fd4cf84cbd0007c0fd382a7, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
@@ -37222,19 +37230,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

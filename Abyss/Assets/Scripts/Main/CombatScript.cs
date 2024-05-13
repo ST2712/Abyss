@@ -46,24 +46,6 @@ public class CombatScript : MonoBehaviour
 
     private void directionalPunch()
     {
-        /*
-        animator.SetTrigger("NormalPunch");
-
-        Ray2D ray = new Ray2D(punchController.position, Vector2.right);
-        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, 2.0f);
-
-        if (hit)
-        {
-            Debug.DrawLine(ray.origin, hit.point, Color.green);
-            if (hit.collider.CompareTag("Enemy"))
-            {
-                hit.transform.GetComponent<Enemy>().takeDamage(punchDamage);
-            }
-        }
-        else
-        {
-            Debug.DrawRay(ray.origin, ray.direction * 2.0f, Color.red);
-        }*/
 
         GameObject player = GameObject.Find("Player");
         StartCoroutine(player.GetComponent<TopDownMovement>().CancelSpeed(0.7f));

@@ -22,14 +22,4 @@ public class CoinSoundController : MonoBehaviour
     {
         audioSource.PlayOneShot(audioClip);
     }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 }
