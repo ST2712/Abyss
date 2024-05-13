@@ -4470,6 +4470,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 3f1a5cf6359b55748b0bfd02e907d9ea,
         type: 2}
+    - target: {fileID: 3148641027002024774, guid: 76cb9f445fd4cf84cbd0007c0fd382a7,
+        type: 3}
+      propertyPath: inventorySprite
+      value: 
+      objectReference: {fileID: -1248617125, guid: 8913010182dfbf142b6c65a6e43a292b,
+        type: 3}
     - target: {fileID: 4879398300378045968, guid: 76cb9f445fd4cf84cbd0007c0fd382a7,
         type: 3}
       propertyPath: m_Enabled
@@ -13945,22 +13951,22 @@ PrefabInstance:
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7959639437251666377, guid: 4ec8510bdfe3ccf44a9e277542d1ba69,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8862195527806644970, guid: 4ec8510bdfe3ccf44a9e277542d1ba69,
         type: 3}

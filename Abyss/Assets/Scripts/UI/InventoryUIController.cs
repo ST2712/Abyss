@@ -174,6 +174,8 @@ namespace Inventory
             {
                 player.GetComponent<TopDownMovement>().enabled = !player.GetComponent<TopDownMovement>().enabled;
                 player.GetComponent<CombatScript>().enabled = !player.GetComponent<CombatScript>().enabled;
+                player.GetComponent<Animator>().SetFloat("xLast", 0);
+                player.GetComponent<Animator>().SetFloat("yLast", -1);
                 if (inventoryUI.isActiveAndEnabled == false)
                 {
                     Time.timeScale = 0f;
