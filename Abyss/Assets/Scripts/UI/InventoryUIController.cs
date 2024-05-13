@@ -24,13 +24,14 @@ namespace Inventory
         [SerializeField] private AudioSource audioSource;
 
         [SerializeField] private AudioClip dropClip;
+        private GameObject player;
 
         private void Start()
         {
             PrepareUI();
             overlay.gameObject.SetActive(false);
             PrepareInventoryData();
-
+            player = GameObject.Find("Player");
         }
 
         private void PrepareInventoryData()
@@ -171,8 +172,11 @@ namespace Inventory
         {
             if (Input.GetKeyDown(KeyCode.I))
             {
+                player.GetComponent<TopDownMovement>().enabled = !player.GetComponent<TopDownMovement>().enabled;
+                player.GetComponent<CombatScript>().enabled = !player.GetComponent<CombatScript>().enabled;
                 if (inventoryUI.isActiveAndEnabled == false)
                 {
+                    Time.timeScale = 0f;
                     inventoryUI.Show();
                     overlay.gameObject.SetActive(true);
                     foreach (var item in inventoryData.GetCurrentInventoryState())
@@ -182,6 +186,7 @@ namespace Inventory
                 }
                 else
                 {
+                    Time.timeScale = 1f;
                     inventoryUI.Hide();
                     overlay.gameObject.SetActive(false);
                 }
