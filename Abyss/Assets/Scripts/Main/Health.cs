@@ -132,12 +132,12 @@ public class Health : MonoBehaviour
 
     IEnumerator PauseSoundAndResume()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
 
         if (healthAudioSource.isPlaying)
         {
             healthAudioSource.Stop();
-            healthAudioSource.PlayDelayed(3f);
+            healthAudioSource.PlayDelayed(1f);
         }
     }
 }

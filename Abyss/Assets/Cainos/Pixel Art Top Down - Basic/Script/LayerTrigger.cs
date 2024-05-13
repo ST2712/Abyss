@@ -19,6 +19,10 @@ namespace Cainos.PixelArtTopDown_Basic
             SpriteRenderer[] srs = other.gameObject.GetComponentsInChildren<SpriteRenderer>();
             foreach ( SpriteRenderer sr in srs)
             {
+                if(other.gameObject.name.Equals("Player")){
+                    GameObject player = GameObject.Find("Player");
+                    player.transform.Find("Weapon").transform.Find("basic_sword").gameObject.GetComponent<SpriteRenderer>().sortingLayerName = sortingLayer;
+                }
                 sr.sortingLayerName = sortingLayer;
             }
         }
