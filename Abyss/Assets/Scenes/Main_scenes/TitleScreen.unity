@@ -1199,12 +1199,12 @@ PrefabInstance:
     - target: {fileID: 4994538452235467502, guid: af6ec3180d427fc43bc832e9d9e0cae6,
         type: 3}
       propertyPath: m_text
-      value: OPTIONS
+      value: OPCIOENES
       objectReference: {fileID: 0}
     - target: {fileID: 4994538452235467502, guid: af6ec3180d427fc43bc832e9d9e0cae6,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4286098889
+      value: 4291019715
       objectReference: {fileID: 0}
     - target: {fileID: 5952702592121962331, guid: af6ec3180d427fc43bc832e9d9e0cae6,
         type: 3}
@@ -2024,12 +2024,12 @@ PrefabInstance:
     - target: {fileID: 4994538452235467502, guid: af6ec3180d427fc43bc832e9d9e0cae6,
         type: 3}
       propertyPath: m_text
-      value: EXIT
+      value: SALIR
       objectReference: {fileID: 0}
     - target: {fileID: 4994538452235467502, guid: af6ec3180d427fc43bc832e9d9e0cae6,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4286098889
+      value: 4291019715
       objectReference: {fileID: 0}
     - target: {fileID: 5952702592121962331, guid: af6ec3180d427fc43bc832e9d9e0cae6,
         type: 3}

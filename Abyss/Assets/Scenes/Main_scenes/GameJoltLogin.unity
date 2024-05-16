@@ -276,15 +276,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 113414, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 124444, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 132600, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 155568, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_Name
@@ -292,11 +292,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 174140, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 191248, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 481182, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -349,7 +349,7 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 11426150, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_Text
-      value: Show Token
+      value: Mostrar Token
       objectReference: {fileID: 0}
     - target: {fileID: 11426150, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_FontData.m_Font
@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11480760, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_Text
-      value: Remember Me
+      value: Recordar
       objectReference: {fileID: 0}
     - target: {fileID: 11480760, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_FontData.m_Font
@@ -461,7 +461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11493066, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_Text
-      value: Create Account
+      value: Crear Cuenta
       objectReference: {fileID: 0}
     - target: {fileID: 11493066, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_FontData.m_Font
@@ -470,13 +470,17 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 11497296, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_Text
-      value: Cancel
+      value: Cancelar
       objectReference: {fileID: 0}
     - target: {fileID: 11497296, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 2477571a4ce7d174db8bfe19b630d08d,
         type: 3}
+    - target: {fileID: 11498286, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
+      propertyPath: m_Text
+      value: Usuario
+      objectReference: {fileID: 0}
     - target: {fileID: 22344950, guid: 7a2e587034d846647b593aa159d7ed8d, type: 3}
       propertyPath: m_Camera
       value: 
