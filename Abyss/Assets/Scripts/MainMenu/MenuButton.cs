@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using GameJolt.API;
 using GameJolt.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuButton : MonoBehaviour
 {
-    bool isSignedIn;
+    private bool isSignedIn;
     void Start()
     {
         GameJoltUI.Instance.ShowSignIn();
@@ -15,21 +16,38 @@ public class MenuButton : MonoBehaviour
 
     void Update()
     {
-        if(GameJoltAPI.Instance.CurrentUser != null)
+        if (GameJoltAPI.Instance.CurrentUser != null)
         {
             isSignedIn = true;
+            GameJolt.API.Trophies.Unlock(232668, (bool success) =>
+            {
+                if (success)
+                {
+                    Debug.Log("Trophy unlocked!");
+                }
+                else
+                {
+                    Debug.Log("Trophy not unlocked.");
+                }
+            });
+            SceneManager.LoadScene(0);
         }
     }
 
-    void onGUI()
+    void OnGUI()
     {
-        if(isSignedIn)
+        if (isSignedIn)
         {
-            if(GUI.Button(new Rect(10, 10, 100, 30), "Logout"))
+            if (GUI.Button(new Rect(10, 10, 100, 30), "Logout"))
             {
                 GameJoltAPI.Instance.CurrentUser.SignOut();
                 isSignedIn = false;
             }
         }
+    }
+
+    public bool IsSignedIn()
+    {
+        return isSignedIn;
     }
 }

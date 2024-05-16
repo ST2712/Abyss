@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main_scenes/TitleScreen.unity
+    guid: af62f0f2e3c9686439d81cb2b88f2abf
+  - enabled: 1
+    path: Assets/Scenes/Main_scenes/SC Pixel Art Top Down - Basic.unity
+    guid: 3407933c19de13c4990914baf64804d9
+  - enabled: 1
+    path: Assets/Scenes/Main_scenes/GameJoltLogin.unity
+    guid: ffc0bceb8e26ae24a83a1211bc105fac
   m_configObjects: {}
