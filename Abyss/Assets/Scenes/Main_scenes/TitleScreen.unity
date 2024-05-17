@@ -1199,7 +1199,7 @@ PrefabInstance:
     - target: {fileID: 4994538452235467502, guid: af6ec3180d427fc43bc832e9d9e0cae6,
         type: 3}
       propertyPath: m_text
-      value: OPCIOENES
+      value: OPCIONES
       objectReference: {fileID: 0}
     - target: {fileID: 4994538452235467502, guid: af6ec3180d427fc43bc832e9d9e0cae6,
         type: 3}
