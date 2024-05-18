@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 8077820630894094379}
   - component: {fileID: 2948424380111771958}
   - component: {fileID: 1074690689058103930}
+  - component: {fileID: -6141112062550877190}
   - component: {fileID: 2588982162320319661}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: Item
   m_TagString: Untagged
   m_Icon: {fileID: 2800000, guid: 5d548d0624533d24caeb6f1cfd0720a7, type: 3}
@@ -138,6 +139,27 @@ MonoBehaviour:
   <Quantity>k__BackingField: 1
   audioSource: {fileID: 2588982162320319661}
   duration: 0.1
+--- !u!95 &-6141112062550877190
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7720288689915184967}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &2588982162320319661
 AudioSource:
   m_ObjectHideFlags: 0

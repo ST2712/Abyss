@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 6657212852952548705}
   - component: {fileID: 4520274264368196479}
   - component: {fileID: 3673032864401501470}
+  - component: {fileID: 2320204332865107652}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -179,6 +180,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2320204332865107652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2381315934936814116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6c8d555a0479d4e9eb41246572ba7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Image: {fileID: 3673032864401501470}
+  m_SpriteArray:
+  - {fileID: 1538692894, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
+  - {fileID: 1488068324, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
+  - {fileID: 1965605825, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
+  - {fileID: -131565650, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
+  - {fileID: -1075031418, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
+  - {fileID: 716366388, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
+  - {fileID: 1225296222, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
+  - {fileID: 1734796171, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
+  m_Speed: 0.02
 --- !u!1 &3401340411231227146
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +271,8 @@ MonoBehaviour:
   m_text: 99
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b24190aa2556c748b92780d7638466b, type: 2}
-  m_sharedMaterial: {fileID: -1786763492576440856, guid: 4b24190aa2556c748b92780d7638466b, type: 2}
+  m_sharedMaterial: {fileID: -1786763492576440856, guid: 4b24190aa2556c748b92780d7638466b,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

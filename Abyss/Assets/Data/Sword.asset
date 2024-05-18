@@ -16,8 +16,10 @@ MonoBehaviour:
   <MaxStackSize>k__BackingField: 1
   <Name>k__BackingField: Espada de Hierro
   <Description>k__BackingField: "Un arma b\xE1sica pero confiable."
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: 2a9c4c44b2da57d469c3bb61c68d4f64, type: 3}
+  <ItemImage>k__BackingField: {fileID: 214084393, guid: b84338a62352ee748ad378efa79d602d,
+    type: 3}
   <DefaultParametersList>k__BackingField:
   - itemParameter: {fileID: 11400000, guid: b797e56c8973475459fb76e4667a468e, type: 2}
     value: 100
-  <actionSFX>k__BackingField: {fileID: 8300000, guid: 57ea0a79985e2bf4f9fbdd26c436a0f3, type: 3}
+  <actionSFX>k__BackingField: {fileID: 8300000, guid: 57ea0a79985e2bf4f9fbdd26c436a0f3,
+    type: 3}

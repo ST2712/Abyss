@@ -158,9 +158,9 @@ namespace Inventory
                 sb.Append($"{inventoryItem.itemState[i].itemParameter.ParameterName}" +
                         $": {inventoryItem.itemState[i].value} / {inventoryItem.item.DefaultParametersList[i].value}");
                 sb.AppendLine();
-                sb.AppendLine();
+                
             }
-            
+            sb.AppendLine();
             sb.Append(inventoryItem.item.Description);
             
             return sb.ToString();

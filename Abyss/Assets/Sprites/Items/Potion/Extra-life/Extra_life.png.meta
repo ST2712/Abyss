@@ -113,10 +113,10 @@ TextureImporter:
       name: Extra_life_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 6
-        width: 21
-        height: 21
+        x: 3
+        y: 3
+        width: 25
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Extra_life_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 6
-        width: 21
-        height: 21
+        x: 33
+        y: 3
+        width: 25
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: Extra_life_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 6
-        width: 21
-        height: 21
+        x: 63
+        y: 3
+        width: 25
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: Extra_life_3
       rect:
         serializedVersion: 2
-        x: 95
-        y: 6
-        width: 21
-        height: 21
+        x: 93
+        y: 3
+        width: 25
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: Extra_life_4
       rect:
         serializedVersion: 2
-        x: 125
-        y: 6
-        width: 21
-        height: 21
+        x: 123
+        y: 3
+        width: 25
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: Extra_life_5
       rect:
         serializedVersion: 2
-        x: 155
-        y: 6
-        width: 21
-        height: 21
+        x: 153
+        y: 3
+        width: 25
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: Extra_life_6
       rect:
         serializedVersion: 2
-        x: 185
-        y: 6
-        width: 21
-        height: 21
+        x: 183
+        y: 3
+        width: 25
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: Extra_life_7
       rect:
         serializedVersion: 2
-        x: 215
-        y: 6
-        width: 21
-        height: 21
+        x: 213
+        y: 3
+        width: 25
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
