@@ -94,7 +94,7 @@ namespace Inventory
                 }
                 inventoryUI.AddAction("Tirar", () => DropItem(itemIndex, inventoryItem.quantity));
             }
-            
+
 
         }
 
@@ -183,10 +183,7 @@ namespace Inventory
         {
             if (Input.GetKeyDown(KeyCode.I))
             {
-                player.GetComponent<TopDownMovement>().enabled = !player.GetComponent<TopDownMovement>().enabled;
-                player.GetComponent<CombatScript>().enabled = !player.GetComponent<CombatScript>().enabled;
-                player.GetComponent<Animator>().SetFloat("xLast", 0);
-                player.GetComponent<Animator>().SetFloat("yLast", -1);
+                ReAsignPlayerScripts();
                 if (inventoryUI.isActiveAndEnabled == false)
                 {
                     Time.timeScale = 0f;
@@ -203,6 +200,25 @@ namespace Inventory
                     inventoryUI.Hide();
                     overlay.gameObject.SetActive(false);
                 }
+            }
+        }
+
+        private void ReAsignPlayerScripts()
+        {
+            if (player == null)
+            {
+                player = GameObject.Find("Player");
+                player.GetComponent<TopDownMovement>().enabled = !player.GetComponent<TopDownMovement>().enabled;
+                player.GetComponent<CombatScript>().enabled = !player.GetComponent<CombatScript>().enabled;
+                player.GetComponent<Animator>().SetFloat("xLast", 0);
+                player.GetComponent<Animator>().SetFloat("yLast", -1);
+            }
+            else
+            {
+                player.GetComponent<TopDownMovement>().enabled = !player.GetComponent<TopDownMovement>().enabled;
+                player.GetComponent<CombatScript>().enabled = !player.GetComponent<CombatScript>().enabled;
+                player.GetComponent<Animator>().SetFloat("xLast", 0);
+                player.GetComponent<Animator>().SetFloat("yLast", -1);
             }
         }
     }

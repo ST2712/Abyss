@@ -15,7 +15,7 @@ public class CombatScript : MonoBehaviour
     [SerializeField] private float normalRatioPunch;
     [SerializeField] public float punchDamage;
     [SerializeField] private float timeBetweenPunches;
-    [SerializeField] private float timeNextPunch;
+    [SerializeField] public float timeNextPunch;
     private Vector2 direction;
 
     private Rigidbody2D rb2D;

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,13 +15,21 @@ public class Health : MonoBehaviour
     public Sprite emptyHeart;
     public Sprite extraHeart;
 
-    [SerializeField]private AudioSource healthAudioSource;
+    [SerializeField] private AudioSource healthAudioSource;
 
     private TopDownMovement topDownMovement;
     [SerializeField] private float noControlTime;
     private Animator animator;
     private GameObject player;
     private Vector2 diePoint;
+
+    private GameOverMenu gameOverMenu;
+
+    void Awake()
+    {
+        gameOverMenu = GameObject.Find("DeadScreen").GetComponent<GameOverMenu>();
+        gameOverMenu.gameObject.SetActive(false);
+    }
 
     void Start()
     {
@@ -29,7 +38,6 @@ public class Health : MonoBehaviour
         animator.SetBool("isDead", false);
         animator.SetBool("canAttack", true);
         player = GameObject.Find("Player");
-
     }
 
     void Update()
@@ -103,7 +111,8 @@ public class Health : MonoBehaviour
                 player.GetComponent<CombatScript>().enabled = false;
                 GetComponent<Collider2D>().enabled = false;
                 diePoint = player.transform.position;
-                Destroy(gameObject, 4);
+                //Destroy(gameObject, 3);
+                gameOverMenu.GameOver();
             }
             animator.SetTrigger("Hurt");
             StartCoroutine(NoControl());
