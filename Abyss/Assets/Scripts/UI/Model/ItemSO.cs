@@ -13,15 +13,15 @@ namespace Inventory.Model
 
         [field: SerializeField] public int MaxStackSize { get; set; } = 1;
 
-        [field: SerializeField]  public string Name { get; set; }
+        [field: SerializeField] public string Name { get; set; }
 
-        [field: SerializeField] [field: TextArea] public string Description { get; set; }
+        [field: SerializeField][field: TextArea] public string Description { get; set; }
 
         [field: SerializeField] public Sprite ItemImage { get; set; }
 
-        [field: SerializeField] public List<ItemParameter> DefaultParametersList {get; set;}
-    }
+        [field: SerializeField] public List<ItemParameter> DefaultParametersList { get; set; }
 
+    }
     [Serializable]
     public struct ItemParameter : IEquatable<ItemParameter>
     {
@@ -33,4 +33,5 @@ namespace Inventory.Model
         }
     }
 }
+
 

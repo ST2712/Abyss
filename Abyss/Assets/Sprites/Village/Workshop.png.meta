@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 233ac98e2df9cd24bb4ab077b9e366a8
+guid: 8274295893eec4248a11b75bfbaaa079
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bramble_0
+      name: Workshop_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 9
-        width: 21
-        height: 21
-      alignment: 9
-      pivot: {x: 0.4906446, y: 0.24116693}
+        x: 59
+        y: 10
+        width: 111
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cbf1ce9b92bc894094f6c0d8daaff39
-      internalID: 1521188212
+      spriteID: 3e9273d1cc280e1479d0f7ab7c8187b9
+      internalID: -1629902657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Workshop_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 33
+        width: 143
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96dbf65883838434d9fc5e1205df659f
+      internalID: 1900665172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Workshop_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 92
+        width: 178
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dacbbb2a1f228e4cbd7089861acb9d9
+      internalID: -2075805250
       vertices: []
       indices: 
       edges: []
@@ -141,7 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bramble_0: 1521188212
+      Workshop_0: -1629902657
+      Workshop_1: 1900665172
+      Workshop_2: -2075805250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

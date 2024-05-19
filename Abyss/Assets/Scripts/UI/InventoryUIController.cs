@@ -71,56 +71,67 @@ namespace Inventory
             if (inventoryItem.IsEmpty)
                 return;
 
-            IItemAction itemAction = inventoryItem.item as IItemAction;
+            /*IItemAction itemAction = inventoryItem.item as IItemAction;
             if (itemAction != null)
             {
-                
                 inventoryUI.ShowItemAction(itemIndex);
                 inventoryUI.AddAction(itemAction.ActionName, () => PerformAction(itemIndex));
             }
+            else if (itemAction.ActionName != "")
+            {
+                inventoryUI.ShowItemAction(itemIndex);
+            }*/
 
-            IDestroyableItem destroyableItem =  inventoryItem.item as IDestroyableItem;
+            IDestroyableItem destroyableItem = inventoryItem.item as IDestroyableItem;
             if (destroyableItem != null)
             {
-                inventoryUI.AddAction("Drop", () => DropItem(itemIndex, inventoryItem.quantity));
+                inventoryUI.ShowItemAction(itemIndex);
+                IItemAction itemAction = inventoryItem.item as IItemAction;
+                if (itemAction != null)
+                {
+                    inventoryUI.ShowItemAction(itemIndex);
+                    inventoryUI.AddAction(itemAction.ActionName, () => PerformAction(itemIndex));
+                }
+                inventoryUI.AddAction("Tirar", () => DropItem(itemIndex, inventoryItem.quantity));
             }
             
+
         }
 
         private void DropItem(int itemIndex, int quantity)
-{
-    inventoryData.RemoveItem(itemIndex, quantity);
-    inventoryUI.ResetSelection();
+        {
+            inventoryData.RemoveItem(itemIndex, quantity);
+            inventoryUI.ResetSelection();
 
-    if (audioSource!= null && dropClip!= null)
-    {
-        audioSource.PlayOneShot(dropClip);
-        Debug.Log(""+audioSource.name + dropClip.name);
-    }
-    else
-    {
-        Debug.LogError("AudioSource or dropClip is null!");
-    }
-}
+            if (audioSource != null && dropClip != null)
+            {
+                audioSource.PlayOneShot(dropClip);
+                Debug.Log("" + audioSource.name + dropClip.name);
+            }
+            else
+            {
+                Debug.LogError("AudioSource or dropClip is null!");
+            }
+        }
         public void PerformAction(int itemIndex)
         {
             InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
             if (inventoryItem.IsEmpty)
                 return;
-            IDestroyableItem destroyableItem =  inventoryItem.item as IDestroyableItem;
-            
+            IDestroyableItem destroyableItem = inventoryItem.item as IDestroyableItem;
+
             if (destroyableItem != null)
             {
                 inventoryData.RemoveItem(itemIndex, 1);
             }
-            
+
             IItemAction itemAction = inventoryItem.item as IItemAction;
             if (itemAction != null)
             {
                 itemAction.PerformAction(gameObject, inventoryItem.itemState);
                 audioSource.PlayOneShot(itemAction.actionSFX);
-                if(inventoryData.GetItemAt(itemIndex).IsEmpty)
-                inventoryUI.ResetSelection();
+                if (inventoryData.GetItemAt(itemIndex).IsEmpty)
+                    inventoryUI.ResetSelection();
             }
         }
 
@@ -158,13 +169,13 @@ namespace Inventory
                 sb.Append($"{inventoryItem.itemState[i].itemParameter.ParameterName}" +
                         $": {inventoryItem.itemState[i].value} / {inventoryItem.item.DefaultParametersList[i].value}");
                 sb.AppendLine();
-                
+
             }
             sb.AppendLine();
             sb.Append(inventoryItem.item.Description);
-            
+
             return sb.ToString();
-            
+
         }
 
 

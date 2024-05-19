@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 233ac98e2df9cd24bb4ab077b9e366a8
+guid: ac4edc37331304d4caee9fa0fb693d4f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bramble_0
+      name: ForgeOven_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 9
-        width: 21
-        height: 21
-      alignment: 9
-      pivot: {x: 0.4906446, y: 0.24116693}
+        x: 0
+        y: 52
+        width: 64
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cbf1ce9b92bc894094f6c0d8daaff39
-      internalID: 1521188212
+      spriteID: cb44732a52fb78d4c8f2c2339be47dfa
+      internalID: -930982660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForgeOven_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 52
+        width: 64
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf30cd83b26caa4aa2943d797ba4ca2
+      internalID: 1597761271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForgeOven_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 52
+        width: 64
+        height: 97
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30e520c239f2e74d838ff98ec05ca70
+      internalID: -202791180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForgeOven_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 138
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435c878c7af34574abe9d902c33f60b9
+      internalID: 584127429
       vertices: []
       indices: 
       edges: []
@@ -141,7 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bramble_0: 1521188212
+      ForgeOven_0: -930982660
+      ForgeOven_1: 1597761271
+      ForgeOven_2: -202791180
+      ForgeOven_3: 584127429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 233ac98e2df9cd24bb4ab077b9e366a8
+guid: 598459172313cf94fb6c3c53c9994372
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,22 +110,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bramble_0
+      name: MaginPot_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 9
-        width: 21
-        height: 21
-      alignment: 9
-      pivot: {x: 0.4906446, y: 0.24116693}
+        x: 0
+        y: 0
+        width: 25
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cbf1ce9b92bc894094f6c0d8daaff39
-      internalID: 1521188212
+      spriteID: 536ef83ede22aa04eb1ee0d66b4fa419
+      internalID: 2063404252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaginPot_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 25
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763f953e29387e24b82c2cb4644dde61
+      internalID: 569617600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaginPot_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 25
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e795831de7f2c9e42b07d435b1ceef33
+      internalID: 1683507737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaginPot_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 25
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ea2325cf1e3c94db5b4bf6f4675655
+      internalID: 32284589
       vertices: []
       indices: 
       edges: []
@@ -141,7 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bramble_0: 1521188212
+      MaginPot_0: 2063404252
+      MaginPot_1: 569617600
+      MaginPot_2: 1683507737
+      MaginPot_3: 32284589
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

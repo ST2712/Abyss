@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Extra_life
-  m_Shader: {fileID: 4800000, guid: 6550f6ce69d62b841b4c4f6818d8e73c, type: 3}
+  m_Name: CHURCH - DAY
+  m_Shader: {fileID: 4800000, guid: 1ecad76f5afc08c4baa59e2c3946bd55, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -28,12 +28,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4f6e895b395948144a9f3a25ef44022b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8cff29aceeaff67448e8adf54a69d824, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - PixelSnap: 0
+    - _AlphaClip: 0.05
     - _EnableExternalAlpha: 0
     - _StencilRef: 0
     m_Colors:
