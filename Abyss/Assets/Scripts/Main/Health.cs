@@ -28,8 +28,8 @@ public class Health : MonoBehaviour
 
     void Awake()
     {
-        gameOverMenu = GameObject.Find("DeadScreen").GetComponent<GameOverMenu>();
-        gameOverMenu.gameObject.SetActive(false);
+        //gameOverMenu = GameObject.Find("DeadScreen").GetComponent<GameOverMenu>();
+        //gameOverMenu.gameObject.SetActive(false);
     }
 
     void Start()
@@ -79,7 +79,6 @@ public class Health : MonoBehaviour
             if (!healthAudioSource.isPlaying)
             {
                 healthAudioSource.PlayOneShot(healthAudioSource.clip);
-                StartCoroutine(PauseSoundAndResume());
             }
         }
         else
@@ -137,16 +136,5 @@ public class Health : MonoBehaviour
         Physics2D.IgnoreLayerCollision(6, 7, true);
         yield return new WaitForSeconds(noControlTime);
         Physics2D.IgnoreLayerCollision(6, 7, false);
-    }
-
-    IEnumerator PauseSoundAndResume()
-    {
-        yield return new WaitForSeconds(1f);
-
-        if (healthAudioSource.isPlaying)
-        {
-            healthAudioSource.Stop();
-            healthAudioSource.PlayDelayed(1f);
-        }
     }
 }

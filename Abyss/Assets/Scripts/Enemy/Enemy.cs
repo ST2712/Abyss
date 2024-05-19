@@ -37,11 +37,11 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             audioSource.Play();
-            //GetComponent<FollowObjective>().enabled = false;
+            GetComponent<FollowObjective>().enabled = false;
             die();
             this.enabled = false;
             GetComponent<Collider2D>().enabled = false;
-            Destroy(gameObject, 4);
+            Destroy(gameObject, 2);
         }
     }
 
@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
     {
         animator.SetTrigger("Dead");
         coin.GetComponent<Coin>().soundController = soundController;
-        coin.GetComponent<Coin>().score = GameObject.FindGameObjectWithTag("Amount").GetComponent<Score>();
+        //coin.GetComponent<Coin>().score = GameObject.FindGameObjectWithTag("Amount").GetComponent<Score>();
         Instantiate(coin, transform.position, Quaternion.identity);
     }
 
