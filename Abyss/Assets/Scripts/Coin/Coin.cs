@@ -14,7 +14,7 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //score.getPoints(coinValue);
+            score.getPoints(coinValue);
             soundController.GetComponent<CoinSoundController>().playSound(coinSoundClip);
             Destroy(gameObject);
         }

@@ -16,8 +16,6 @@ public class Health : MonoBehaviour
 
     [SerializeField]private AudioSource healthAudioSource;
 
-    [SerializeField] private AudioClip heartBeat;
-
     private TopDownMovement topDownMovement;
     [SerializeField] private float noControlTime;
     private Animator animator;
@@ -71,7 +69,7 @@ public class Health : MonoBehaviour
         {
             if (!healthAudioSource.isPlaying)
             {
-                healthAudioSource.PlayOneShot(heartBeat);
+                healthAudioSource.PlayOneShot(healthAudioSource.clip);
                 StartCoroutine(PauseSoundAndResume());
             }
         }

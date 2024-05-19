@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        //navMeshAgent = GetComponent<NavMeshAgent>();
         //attackDamage = 1;
     }
 
@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
     {
         animator.SetTrigger("Dead");
         coin.GetComponent<Coin>().soundController = soundController;
-        //coin.GetComponent<Coin>().score = GameObject.FindGameObjectWithTag("Amount").GetComponent<Score>();
+        coin.GetComponent<Coin>().score = GameObject.FindGameObjectWithTag("Amount").GetComponent<Score>();
         Instantiate(coin, transform.position, Quaternion.identity);
     }
 
@@ -57,7 +57,7 @@ public class Enemy : MonoBehaviour
     {
         if (player != null && Vector2.Distance(transform.position, player.transform.position) <= rangeToAttack && canAttack)
         {
-            StartCoroutine(Attack());
+            //StartCoroutine(Attack());
         }
     }
 

@@ -19,6 +19,8 @@ public class TopDownMovement : MonoBehaviour
 
     private bool axesDisabled = false;
 
+    [SerializeField] private AudioSource playerAudioSource;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -39,7 +41,11 @@ public class TopDownMovement : MonoBehaviour
             {
                 animator.SetFloat("xLast", xMovement);
                 animator.SetFloat("yLast", yMovement);
+                if(!playerAudioSource.isPlaying && canMove && playerAudioSource.isActiveAndEnabled){
+                    playerAudioSource.PlayOneShot(playerAudioSource.clip); 
+                }
             }
+            
 
             direction = new Vector2(xMovement, yMovement).normalized;
         }
