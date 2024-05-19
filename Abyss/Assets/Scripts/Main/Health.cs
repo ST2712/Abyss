@@ -16,6 +16,7 @@ public class Health : MonoBehaviour
     public Sprite extraHeart;
 
     [SerializeField] private AudioSource healthAudioSource;
+    [SerializeField] private AudioSource damageAudioSource;
 
     private TopDownMovement topDownMovement;
     [SerializeField] private float noControlTime;
@@ -92,6 +93,7 @@ public class Health : MonoBehaviour
     {
         player.GetComponent<CombatScript>().enableAttack(false);
         player.GetComponent<CombatScript>().punchDamage = 0;
+        damageAudioSource.PlayOneShot(damageAudioSource.clip);
         if (extraHealth)
         {
             extraHealth = false;
