@@ -20,9 +20,6 @@ public class CombatScript : MonoBehaviour
 
     private Rigidbody2D rb2D;
 
-    private float xMovement;
-    private float yMovement;
-
     private Animator animator;
 
 

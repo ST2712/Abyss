@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Inventory;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -8,19 +10,21 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject mainCamera;
 
-    void Awake(){
-        pauseMenuUI.SetActive(false);
-    }
+    private GameObject player;
+    private CombatScript combatScript;
 
-    void Start()
+    void Awake()
     {
-
+        pauseMenuUI.SetActive(false);
+        player = GameObject.Find("Player");
+        combatScript = player.GetComponent<CombatScript>();
     }
 
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        ChangeStateOfComponents(true);
+        
         gameIsPaused = false;
         mainCamera.GetComponent<AudioSource>().UnPause();
     }
@@ -28,9 +32,38 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+        ChangeStateOfComponents(false);
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+        if(!(combatScript.timeNextPunch > 0))
+        {
+            combatScript.timeNextPunch = 0.01f;
+        }
+
         gameIsPaused = true;
         mainCamera.GetComponent<AudioSource>().Pause();
+    }
+
+    private void ChangeStateOfComponents(bool state)
+    {
+
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        if (enemies != null && enemies.Length > 0)
+        {
+            foreach (GameObject enemy in enemies)
+            {
+                enemy.GetComponent<NavMeshAgent>().enabled = state;
+                enemy.GetComponent<Enemy>().enabled = state;
+                enemy.GetComponent<FollowObjective>().enabled = state;
+                enemy.GetComponent<Animator>().enabled = state;
+            }
+        }
+
+        player.GetComponent<TopDownMovement>().enabled = state;
+        player.GetComponent<InventoryController>().enabled = state;
+        player.GetComponent<TopDownMovement>().enabled = state;
+        player.GetComponent<Animator>().enabled = state;
     }
 
     public void MainMenu(int index)

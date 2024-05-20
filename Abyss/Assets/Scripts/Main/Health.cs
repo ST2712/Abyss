@@ -26,10 +26,14 @@ public class Health : MonoBehaviour
 
     private GameOverMenu gameOverMenu;
 
+    private CombatScript combatScript;
+
+    private PauseMenu pauseMenu;
+
     void Awake()
     {
-        //gameOverMenu = GameObject.Find("DeadScreen").GetComponent<GameOverMenu>();
-        //gameOverMenu.gameObject.SetActive(false);
+        gameOverMenu = GameObject.Find("DeadScreen").GetComponent<GameOverMenu>();
+        gameOverMenu.gameObject.SetActive(false);
     }
 
     void Start()
@@ -39,6 +43,8 @@ public class Health : MonoBehaviour
         animator.SetBool("isDead", false);
         animator.SetBool("canAttack", true);
         player = GameObject.Find("Player");
+        combatScript = player.GetComponent<CombatScript>();
+        pauseMenu = player.GetComponent<PauseMenu>();
     }
 
     void Update()
@@ -74,7 +80,7 @@ public class Health : MonoBehaviour
             hearts[3].enabled = true;
         }
 
-        if (health == 1)
+        if (health == 1 && !extraHealth)
         {
             if (!healthAudioSource.isPlaying)
             {
@@ -84,6 +90,19 @@ public class Health : MonoBehaviour
         else
         {
             healthAudioSource.Stop();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            combatScript.timeNextPunch = 0.01f;
+            if (pauseMenu.gameIsPaused)
+            {
+                pauseMenu.Resume();
+            }
+            else
+            {
+                pauseMenu.Pause();
+            }
         }
 
     }
@@ -113,6 +132,7 @@ public class Health : MonoBehaviour
                 GetComponent<Collider2D>().enabled = false;
                 diePoint = player.transform.position;
                 //Destroy(gameObject, 3);
+                Debug.Log("Game Over");
                 gameOverMenu.GameOver();
             }
             animator.SetTrigger("Hurt");

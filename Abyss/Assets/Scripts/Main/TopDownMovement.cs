@@ -21,16 +21,11 @@ public class TopDownMovement : MonoBehaviour
 
     [SerializeField] private AudioSource playerAudioSource;
 
-    private PauseMenu pauseMenu;
-
-    private CombatScript combatScript;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
-        pauseMenu = GameObject.Find("Player").GetComponent<PauseMenu>();
-        combatScript = GameObject.Find("Player").GetComponent<CombatScript>();
         axesDisabled = false;
     }
 
@@ -54,19 +49,6 @@ public class TopDownMovement : MonoBehaviour
             }
 
             direction = new Vector2(xMovement, yMovement).normalized;
-
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                combatScript.timeNextPunch = 0.01f;
-                if (pauseMenu.gameIsPaused)
-                {
-                    pauseMenu.Resume();
-                }
-                else
-                {
-                    pauseMenu.Pause();
-                }
-            }
         }
 
     }

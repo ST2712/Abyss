@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class FollowObjective : MonoBehaviour
 {
     [SerializeField] private Transform target;
-    public static NavMeshAgent navMeshAgent;
+    private NavMeshAgent navMeshAgent;
     private float xMovement;
     private float yMovement;
 
@@ -23,7 +23,6 @@ public class FollowObjective : MonoBehaviour
     private void Update()
     {
         navMeshAgent.SetDestination(target.position);
-
         Vector3 direction = (target.position - transform.position).normalized;
         xMovement = direction.x;
         yMovement = direction.y;
