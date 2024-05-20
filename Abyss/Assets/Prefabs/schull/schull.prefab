@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3874186409207056439}
-  - component: {fileID: 8762860319207346203}
+  - component: {fileID: 4894310408088676721}
   - component: {fileID: 8381586172064969210}
   - component: {fileID: 7964462378511485206}
   - component: {fileID: 976260485996900887}
@@ -37,7 +37,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8762860319207346203
+--- !u!212 &4894310408088676721
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 612125506, guid: fa6e3eaffd9e4c749a86e4a15d737a30, type: 3}
+  m_Sprite: {fileID: 12956126, guid: 8cb1399aeca6abf46a4f45aa90537222, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -168,6 +168,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 40
+  attackRange: 0
+  attackCooldown: 0
+  normalAttackRightController: {fileID: 0}
+  normalAttackLeftController: {fileID: 0}
+  attackRangeController: {fileID: 0}
+  rangeToAttack: 0
   coin: {fileID: 5427878133791152627, guid: 787ee559b0926ce4a814cb0d7e579bae, type: 3}
   soundController: {fileID: 0}
 --- !u!82 &101472957161771871
