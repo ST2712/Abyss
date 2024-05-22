@@ -26,17 +26,26 @@ namespace Inventory.UI
         }
         public void ResetData()
         {
-            itemImage.gameObject.SetActive(false);
+            if (itemImage != null)
+            {
+                itemImage.gameObject.SetActive(false);
+            }
             empty = true;
         }
         public void Deselect()
         {
-            borderImage.enabled = false;
+            if (borderImage != null)
+            {
+                borderImage.enabled = false;
+            }
         }
         public void SetData(Sprite sprite, int quantity)
         {
-            itemImage.gameObject.SetActive(true);
-            itemImage.sprite = sprite;
+            if (itemImage != null)
+            {
+                itemImage.gameObject.SetActive(true);
+                itemImage.sprite = sprite;
+            }
             quantityTxt.text = quantity.ToString();
             empty = false;
         }
