@@ -16,7 +16,6 @@ public class GameOverMenu : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("Game Over");
         mainCamera.GetComponent<AudioSource>().Stop();
         gameOverMenuUI.SetActive(true);
     }

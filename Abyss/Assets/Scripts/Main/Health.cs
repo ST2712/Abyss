@@ -132,7 +132,6 @@ public class Health : MonoBehaviour
                 GetComponent<Collider2D>().enabled = false;
                 diePoint = player.transform.position;
                 //Destroy(gameObject, 3);
-                Debug.Log("Game Over");
                 gameOverMenu.GameOver();
             }
             animator.SetTrigger("Hurt");
