@@ -18,6 +18,9 @@ public class Coin : MonoBehaviour
                 score = GameObject.Find("Amount").GetComponent<Score>();
             }
             score.getPoints(coinValue);
+            if(soundController == null){
+                soundController = GameObject.Find("SoundCoinController");
+            }
             soundController.GetComponent<CoinSoundController>().playSound(coinSoundClip);
             Destroy(gameObject);
         }
