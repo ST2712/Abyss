@@ -27028,6 +27028,51 @@ Transform:
   - {fileID: 354363843}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &398574773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398574774}
+  - component: {fileID: 398574775}
+  m_Layer: 0
+  m_Name: PointsController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &398574774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398574773}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.2516036, y: 7.6613984, z: 375.66272}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &398574775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398574773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475c28ed5478b7c4a9f7513f55d16b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
 --- !u!114 &414415738 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3958818580098379757, guid: 687827f65f1ad904a962c27dbacbed8b,
@@ -27886,22 +27931,22 @@ PrefabInstance:
     - target: {fileID: 9035393851679507724, guid: 687827f65f1ad904a962c27dbacbed8b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035393851679507724, guid: 687827f65f1ad904a962c27dbacbed8b,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035393851679507724, guid: 687827f65f1ad904a962c27dbacbed8b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 9035393851679507724, guid: 687827f65f1ad904a962c27dbacbed8b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47542,3 +47587,4 @@ SceneRoots:
   - {fileID: 1557332353}
   - {fileID: 50447466}
   - {fileID: 854003055}
+  - {fileID: 398574774}

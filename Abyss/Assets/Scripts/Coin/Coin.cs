@@ -17,7 +17,8 @@ public class Coin : MonoBehaviour
             if(score == null){
                 score = GameObject.Find("Amount").GetComponent<Score>();
             }
-            score.getPoints(coinValue);
+            PointsController.instance.addPoints(coinValue);
+            score.getPoints(PointsController.instance.points);
             if(soundController == null){
                 soundController = GameObject.Find("SoundCoinController");
             }
