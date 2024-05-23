@@ -345,7 +345,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272797733}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &272797735
 Camera:
   m_ObjectHideFlags: 0
@@ -480,8 +480,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c03acee6d10e6ec43808a3874fcf352d, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 9fc63cc52d83e184e89284ff50f476a7, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -27240,6 +27240,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4894310408088676721, guid: 265c447587ef007499774c56dd49a5d8,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894310408088676721, guid: 265c447587ef007499774c56dd49a5d8,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1869315837
+      objectReference: {fileID: 0}
     - target: {fileID: 7259725652903939863, guid: 265c447587ef007499774c56dd49a5d8,
         type: 3}
       propertyPath: target
@@ -27931,22 +27941,22 @@ PrefabInstance:
     - target: {fileID: 9035393851679507724, guid: 687827f65f1ad904a962c27dbacbed8b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9035393851679507724, guid: 687827f65f1ad904a962c27dbacbed8b,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9035393851679507724, guid: 687827f65f1ad904a962c27dbacbed8b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9035393851679507724, guid: 687827f65f1ad904a962c27dbacbed8b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28044,6 +28054,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894310408088676721, guid: 265c447587ef007499774c56dd49a5d8,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894310408088676721, guid: 265c447587ef007499774c56dd49a5d8,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1869315837
       objectReference: {fileID: 0}
     - target: {fileID: 7259725652903939863, guid: 265c447587ef007499774c56dd49a5d8,
         type: 3}
@@ -47329,7 +47349,7 @@ PrefabInstance:
     - target: {fileID: 407486026932391490, guid: 76cb9f445fd4cf84cbd0007c0fd382a7,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1087340063232527761, guid: 76cb9f445fd4cf84cbd0007c0fd382a7,
         type: 3}
@@ -47456,6 +47476,21 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 1729693943}
+    - target: {fileID: 6409591742417441811, guid: 76cb9f445fd4cf84cbd0007c0fd382a7,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409591742417441811, guid: 76cb9f445fd4cf84cbd0007c0fd382a7,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409591742417441811, guid: 76cb9f445fd4cf84cbd0007c0fd382a7,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1869315837
+      objectReference: {fileID: 0}
     - target: {fileID: 7290914483660563849, guid: 76cb9f445fd4cf84cbd0007c0fd382a7,
         type: 3}
       propertyPath: m_Name
@@ -47580,11 +47615,11 @@ SceneRoots:
   - {fileID: 272797736}
   - {fileID: 390826216}
   - {fileID: 2001620873}
-  - {fileID: 522353382}
   - {fileID: 718391805}
   - {fileID: 259814031}
   - {fileID: 777160184}
   - {fileID: 1557332353}
   - {fileID: 50447466}
   - {fileID: 854003055}
+  - {fileID: 522353382}
   - {fileID: 398574774}

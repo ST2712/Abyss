@@ -19,5 +19,8 @@ MonoBehaviour:
   <ItemImage>k__BackingField: {fileID: 1521188212, guid: 233ac98e2df9cd24bb4ab077b9e366a8,
     type: 3}
   <DefaultParametersList>k__BackingField: []
-  modifiersData: []
-  <actionSFX>k__BackingField: {fileID: 0}
+  modifiersData:
+  - statModifier: {fileID: 11400000, guid: 316d8292fcda5804c8ee014463ee6c31, type: 2}
+    value: 1
+  <actionSFX>k__BackingField: {fileID: 8300000, guid: 7786a39c8e774584e948526315c797f1,
+    type: 3}
