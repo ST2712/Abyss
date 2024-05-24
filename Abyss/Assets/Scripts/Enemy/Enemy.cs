@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -22,13 +23,16 @@ public class Enemy : MonoBehaviour
     NavMeshAgent navMeshAgent;
     private int attackDamage;
     private bool canAttack = true;
+
+    public event EventHandler OnAttack;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
         navMeshAgent = GetComponent<NavMeshAgent>();
-        //attackDamage = 1;
+        attackDamage = 1;
     }
 
     public void takeDamage(float damage)
@@ -64,26 +68,52 @@ public class Enemy : MonoBehaviour
     private IEnumerator Attack()
     {
         canAttack = false;
-        animator.SetTrigger("Attack");
-
         float axuiliar = navMeshAgent.speed;
         navMeshAgent.speed = 0;
-        yield return new WaitForSeconds(0.5f); // Tiempo de la animación de ataque, ajusta según tu animación
-        if (Vector2.Distance(transform.position, player.transform.position) <= attackRange)
+        animator.SetTrigger("Attack");
+        /*
+        if ((player != null) && (Vector2.Distance(transform.GetChild(0).position, player.transform.position) <= attackRange))
         {
-            //player.GetComponent<Health>().takeDamage(attackDamage);
-            Collider2D[] objects = Physics2D.OverlapCircleAll(normalAttackRightController.position, attackRange);
-        }
+            Collider2D[] objects = Physics2D.OverlapCircleAll(transform.GetChild(0).position, attackRange);
+
+            foreach (Collider2D obj in objects)
+            {
+                if (obj.CompareTag("Player"))
+                {
+                    Debug.Log("Player hit");
+                    obj.transform.GetComponent<Health>().takeDamage(attackDamage, Vector2.zero);
+                }
+            }
+        }*/
+
         yield return new WaitForSeconds(attackCooldown);
         navMeshAgent.speed = axuiliar;
         canAttack = true;
+    }
+
+    public void ApplyDamage()
+    {
+        if ((player != null) && (Vector2.Distance(transform.GetChild(0).position, player.transform.position) <= attackRange))
+        {
+            Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, attackRange);
+
+            foreach (Collider2D obj in objects)
+            {
+                if (obj.CompareTag("Player"))
+                {
+                    Debug.Log("Player hit");
+                    obj.transform.GetComponent<Health>().takeDamage(attackDamage, Vector2.zero);
+                }
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Health>().takeDamage(1, collision.GetContact(0).normal);
+            Debug.Log("Collision with player");
+            collision.gameObject.GetComponent<Health>().takeDamage(attackDamage, collision.GetContact(0).normal);
         }
     }
 
