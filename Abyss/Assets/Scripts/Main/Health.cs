@@ -92,17 +92,10 @@ public class Health : MonoBehaviour
             healthAudioSource.Stop();
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !gameOverMenu.gameObject.activeSelf)
         {
-            combatScript.timeNextPunch = 0.01f;
-            if (pauseMenu.gameIsPaused)
-            {
-                pauseMenu.Resume();
-            }
-            else
-            {
-                pauseMenu.Pause();
-            }
+            pauseMenu.Pause();
+
         }
 
     }

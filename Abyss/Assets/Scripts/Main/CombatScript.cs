@@ -22,6 +22,8 @@ public class CombatScript : MonoBehaviour
 
     private Animator animator;
 
+    public bool canAttack;
+
 
     private void circlePunch()
     {
@@ -131,6 +133,7 @@ public class CombatScript : MonoBehaviour
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
         animator.SetBool("canAttack", true);
+        canAttack = true;
     }
 
     void Update()
@@ -139,7 +142,7 @@ public class CombatScript : MonoBehaviour
         {
             timeNextPunch -= Time.deltaTime;
         }
-        if (Input.GetButtonDown("Fire1") && timeNextPunch <= 0)
+        if (Input.GetButtonDown("Fire1") && timeNextPunch <= 0 && canAttack)
         {
             circlePunch();
             timeNextPunch = timeBetweenPunches;

@@ -186,7 +186,9 @@ namespace Inventory
                 ReAsignPlayerScripts();
                 if (inventoryUI.isActiveAndEnabled == false)
                 {
-                    Time.timeScale = 0f;
+                    player.GetComponent<CombatScript>().canAttack = false;
+                    player.GetComponent<CombatScript>().timeNextPunch = 0.1f;
+                    ReAsignPlayerScripts(false);
                     inventoryUI.Show();
                     overlay.gameObject.SetActive(true);
                     foreach (var item in inventoryData.GetCurrentInventoryState())
@@ -196,7 +198,8 @@ namespace Inventory
                 }
                 else
                 {
-                    Time.timeScale = 1f;
+                    ReAsignPlayerScripts(true);
+                    player.GetComponent<CombatScript>().canAttack = true;
                     inventoryUI.Hide();
                     overlay.gameObject.SetActive(false);
                 }
@@ -208,18 +211,19 @@ namespace Inventory
             if (player == null)
             {
                 player = GameObject.Find("Player");
-                player.GetComponent<TopDownMovement>().enabled = !player.GetComponent<TopDownMovement>().enabled;
-                player.GetComponent<CombatScript>().enabled = !player.GetComponent<CombatScript>().enabled;
+                player.GetComponent<TopDownMovement>().enabled = true;
+                player.GetComponent<CombatScript>().enabled = true;
                 player.GetComponent<Animator>().SetFloat("xLast", 0);
                 player.GetComponent<Animator>().SetFloat("yLast", -1);
             }
-            else
-            {
-                player.GetComponent<TopDownMovement>().enabled = !player.GetComponent<TopDownMovement>().enabled;
-                player.GetComponent<CombatScript>().enabled = !player.GetComponent<CombatScript>().enabled;
-                player.GetComponent<Animator>().SetFloat("xLast", 0);
-                player.GetComponent<Animator>().SetFloat("yLast", -1);
-            }
+        }
+
+        private void ReAsignPlayerScripts(bool state)
+        {
+            player.GetComponent<TopDownMovement>().enabled = state;
+            player.GetComponent<CombatScript>().enabled = state;
+            player.GetComponent<Animator>().SetFloat("xLast", 0);
+            player.GetComponent<Animator>().SetFloat("yLast", -1);
         }
     }
 }

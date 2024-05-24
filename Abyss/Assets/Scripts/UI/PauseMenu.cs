@@ -24,8 +24,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         ChangeStateOfComponents(true);
-        
-        gameIsPaused = false;
+        player.GetComponent<CombatScript>().canAttack = true;
         mainCamera.GetComponent<AudioSource>().UnPause();
     }
 
@@ -34,13 +33,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         ChangeStateOfComponents(false);
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-
-        if(!(combatScript.timeNextPunch > 0))
-        {
-            combatScript.timeNextPunch = 0.01f;
-        }
-
-        gameIsPaused = true;
+        player.GetComponent<CombatScript>().canAttack = false;
+        player.GetComponent<CombatScript>().timeNextPunch = 0.1f;
         mainCamera.GetComponent<AudioSource>().Pause();
     }
 
@@ -64,6 +58,8 @@ public class PauseMenu : MonoBehaviour
         player.GetComponent<InventoryController>().enabled = state;
         player.GetComponent<TopDownMovement>().enabled = state;
         player.GetComponent<Animator>().enabled = state;
+
+        gameIsPaused = !state;
     }
 
     public void MainMenu(int index)
