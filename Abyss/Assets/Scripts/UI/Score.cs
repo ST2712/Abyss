@@ -21,6 +21,6 @@ public class Score : MonoBehaviour
     }
 
     public void getPoints(int points){
-        this.points += points;
+        this.points = points;
     }
 }

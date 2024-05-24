@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Transform normalAttackLeftController;
     [SerializeField] private Transform attackRangeController;
     [SerializeField] private float rangeToAttack;
+    [SerializeField] private AudioSource damage_sound;
     private Animator animator;
     private AudioSource audioSource;
     public GameObject coin;
@@ -38,6 +39,7 @@ public class Enemy : MonoBehaviour
     public void takeDamage(float damage)
     {
         health -= damage;
+        damage_sound.PlayOneShot(damage_sound.clip);
         if (health <= 0)
         {
             audioSource.Play();
