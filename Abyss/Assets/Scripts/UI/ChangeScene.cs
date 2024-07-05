@@ -21,7 +21,6 @@ public class ChangeScene : MonoBehaviour
         }
         else
         {
-            UnityEditor.EditorApplication.isPlaying = false;
             Application.Quit();
         }
     }

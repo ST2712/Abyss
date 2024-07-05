@@ -9,12 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_scenes/TitleScreen.unity
     guid: af62f0f2e3c9686439d81cb2b88f2abf
   - enabled: 1
-    path: Assets/Scenes/Main_scenes/SC Pixel Art Top Down - Basic.unity
-    guid: 3407933c19de13c4990914baf64804d9
-  - enabled: 1
     path: Assets/Scenes/Main_scenes/GameJoltLogin.unity
     guid: ffc0bceb8e26ae24a83a1211bc105fac
   - enabled: 1
+    path: Assets/Scenes/Main_scenes/SC Pixel Art Top Down - Basic.unity
+    guid: 3407933c19de13c4990914baf64804d9
+  - enabled: 1
     path: Assets/Scenes/Main_scenes/Level_1.unity
     guid: 51cd232cc6ac53d4ea692edfe223d5d7
+  - enabled: 1
+    path: Assets/Scenes/Main_scenes/Level_2.unity
+    guid: f76e1ef5ba83bf84daf4c169cb505dcb
+  - enabled: 1
+    path: Assets/Scenes/Main_scenes/Level_3.unity
+    guid: 1154d2a3fa2cc554293efe54dedb6e53
   m_configObjects: {}

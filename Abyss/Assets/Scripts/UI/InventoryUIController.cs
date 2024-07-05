@@ -8,6 +8,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Text;
+using UnityEngine.AI;
 
 namespace Inventory
 {
@@ -26,12 +27,22 @@ namespace Inventory
         [SerializeField] private AudioClip dropClip;
         private GameObject player;
 
+        private List<GameObject> enemies;
+
         private void Start()
         {
             PrepareUI();
             overlay.gameObject.SetActive(false);
             PrepareInventoryData();
             player = GameObject.Find("Player");
+            try
+            {
+                enemies = new List<GameObject>(GameObject.FindGameObjectsWithTag("Enemy"));
+            }
+            catch (Exception e)
+            {
+                Debug.Log("Enemy not found");
+            }
         }
 
         private void PrepareInventoryData()
@@ -216,6 +227,26 @@ namespace Inventory
                 player.GetComponent<Animator>().SetFloat("xLast", 0);
                 player.GetComponent<Animator>().SetFloat("yLast", -1);
             }
+
+            if (enemies == null || enemies.Count == 0)
+            {
+                try
+                {
+                    foreach (GameObject enemy in enemies)
+                    {
+                        if (enemy != null)
+                        {
+                            enemy.GetComponent<Enemy>().enabled = true;
+                            enemy.GetComponent<FollowObjective>().enabled = true;
+                            enemy.GetComponent<NavMeshAgent>().enabled = true;
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    Debug.Log("Enemy not found");
+                }
+            }
         }
 
         private void ReAsignPlayerScripts(bool state)
@@ -224,6 +255,22 @@ namespace Inventory
             player.GetComponent<CombatScript>().enabled = state;
             player.GetComponent<Animator>().SetFloat("xLast", 0);
             player.GetComponent<Animator>().SetFloat("yLast", -1);
+            try
+            {
+                foreach (GameObject enemy in enemies)
+                {
+                    if (enemy != null)
+                    {
+                        enemy.GetComponent<Enemy>().enabled = state;
+                        enemy.GetComponent<FollowObjective>().enabled = state;
+                        enemy.GetComponent<NavMeshAgent>().enabled = state;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.Log("Enemy not found");
+            }
         }
     }
 }

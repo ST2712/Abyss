@@ -73,21 +73,6 @@ public class Enemy : MonoBehaviour
         float axuiliar = navMeshAgent.speed;
         navMeshAgent.speed = 0;
         animator.SetTrigger("Attack");
-        /*
-        if ((player != null) && (Vector2.Distance(transform.GetChild(0).position, player.transform.position) <= attackRange))
-        {
-            Collider2D[] objects = Physics2D.OverlapCircleAll(transform.GetChild(0).position, attackRange);
-
-            foreach (Collider2D obj in objects)
-            {
-                if (obj.CompareTag("Player"))
-                {
-                    Debug.Log("Player hit");
-                    obj.transform.GetComponent<Health>().takeDamage(attackDamage, Vector2.zero);
-                }
-            }
-        }*/
-
         yield return new WaitForSeconds(attackCooldown);
         navMeshAgent.speed = axuiliar;
         canAttack = true;
@@ -104,7 +89,7 @@ public class Enemy : MonoBehaviour
                 if (obj.CompareTag("Player"))
                 {
                     Debug.Log("Player hit");
-                    obj.transform.GetComponent<Health>().takeDamage(attackDamage, Vector2.zero);
+                    obj.transform.GetComponent<Health>().takeDamage(1, Vector2.zero);
                 }
             }
         }
